@@ -2,7 +2,7 @@
 title: "About me"
 permalink: /about/
 header:
-  image: "/images/banner-beach.png"
+  image: "/images/banner_beach.png"
 ---
 
 A long time ago in a galaxy far, far away....I used to be a Civil Engineer and Project Manager. Now, as a Data Scientist, i'm fascinated by Deep Learning and how to extract knowledge and insights from structured and unstructured data. Also interested in Linux and Open Sources projects during my spare time :). I also used to reverse engineer malwares and will try to keep on doing this kind of stuff for fun after a hiatus.

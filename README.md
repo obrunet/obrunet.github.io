@@ -13,7 +13,7 @@ Welcome to my web site, enjoy your stay.
 - author sidebar with kaggle link instead of twitter.
 - footer links : remove social medias.
 - Sample 404 page : add a funny image.
-- Site wide search.
+- Add reversing eng posts & The Origin of Consciousness – How Unaware Things Became Aware
 - Create a category for books and resize images, also change the about page with links to reviews
 
 

@@ -5,8 +5,8 @@ categories:
   - Data Science
 tags: [Machine Learning Basics]
 header:
-  image: "/images/banner_code.png"
-excerpt: "Few examples to write code in a Pythonic way"
+  image: "/images/banners/banner_code.png"
+excerpt: "Few examples in order to illustrate how to code in a Pythonic way"
 mathjax: "true"
 ---
 

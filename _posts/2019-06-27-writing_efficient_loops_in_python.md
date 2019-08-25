@@ -83,21 +83,6 @@ print(it.__next__())
     b
     o
 
-
-
-    ---------------------------------------------------------------------------
-    
-    StopIteration                             Traceback (most recent call last)
-    
-    <ipython-input-6-b41799584f68> in <module>
-          4 print(it.__next__())
-          5 print(it.__next__())
-    ----> 6 print(it.__next__())
-
-
-    StopIteration: 
-
-
 Python sequently assign an object to an iterator.
 The iterator is an object that define __next__() and raise an exception at the end
 

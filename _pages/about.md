@@ -5,7 +5,9 @@ header:
   image: "/images/banners/banner_about.jpg"
 ---
 
-A long time ago in a galaxy far, far away....I used to be a Civil Engineer and Project Manager. Now, as a Data Scientist, i'm fascinated by Deep Learning and how to extract knowledge and insights from structured and unstructured data. Also interested in Linux and Open Sources projects during my spare time :). I also used to reverse engineer malwares and will try to keep on doing this kind of stuff for fun after a hiatus.
+A long time ago in a galaxy far, far away....I used to be a Civil Engineer and Project Manager. Now, as a Data Scientist, i'm fascinated by Deep Learning and how to extract knowledge and insights from structured and unstructured data. 
+
+Also interested in Linux and Open Sources projects during my spare time :). I used to reverse engineer malwares and will try to keep on doing this kind of stuff for fun after a hiatus.
 
 ## Resume
 [Link](https://github.com/obrunet/Degrees_qualifications_and_resume/blob/master/Resume.pdf)
@@ -14,7 +16,7 @@ A long time ago in a galaxy far, far away....I used to be a Civil Engineer and P
 * Sports : muay thai, swimming, ski...
 * Movies : science-fiction, thriller...
 * Books : neuroscience, AI, Tony Buzan's books on memory, Sophie's World, all kinds of books and newspapers 
-* Misc : linux and open source projects, reverse engineering with radare2 or IDA
+* Misc : linux and open source projects, reverse engineering with [radare2](https://www.radare.org/r/), [IDA Pro](https://www.hex-rays.com/products/ida/) or [x64dbg](https://x64dbg.com/#start)
 
 
 ## Books 

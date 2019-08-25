@@ -5,7 +5,7 @@ categories:
   - Neuroscience
 tags: [Neuroscience, Kurzgesagt]
 header:
-  image: "/images/banner_neuro.png"
+  image: "/images/banners/banner_neuro.png"
 excerpt: "How to be sure that we aren't living in a simulation?"
 mathjax: "true"
 ---

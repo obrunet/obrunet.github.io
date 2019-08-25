@@ -1,16 +1,17 @@
 ---
-title: "Is reality real ?"
+title: "Is Reality Real? The Simulation Argument"
 date: 2019-06-11
 categories:
   - Neuroscience
 tags: [Neuroscience, Kurzgesagt]
 header:
-  image: "/images/banner_neuroscience.png"
+  image: "/images/banner_neuro.png"
 excerpt: "How to be sure that we aren't living in a simulation?"
 mathjax: "true"
 ---
 
-This idea is not new... Many scientists and experts have aldready discussed the fact that we're probably living in a simulation. Just one moment, can you image that ? Everything you see, you do, you feel... would be in only 0 and 1. That sounds incredible but i'm serious.
+This idea is not new... Many scientists and experts have aldready discussed the fact that we're probably living in a simulation. Just one moment, can you image that? 
+Everything you see, you do, you feel... would be in only 0 and 1. That sounds incredible but think about it seriously .
 
 If i'm not wrong, from everything i've red so far, no one is really sure that we aren't living in a virtual world. Untill now, many studies have been conducted on this topic: it hasn't been scientifically proven that we are living in a virtual world or either in a real one.
 

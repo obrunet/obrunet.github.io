@@ -58,7 +58,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : Olivier Brunet"
+  name   : Olivier Brunet
   avatar : "/images/bio.jpg"
   bio    : "Machine Learning Enthusiast"
   location  : "Courbevoie / Paris Area, FR"
@@ -68,9 +68,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://obrunet.github.io/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/obrunet"
+    - label: "Kaggle"
+      icon: "fab fa-fw fa-kaggle"
+      url: "https://kaggle.com/obrunet"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/obrunet"

@@ -8,16 +8,14 @@ Welcome to my web site, enjoy your stay.
 * Informations on Smart Cities, Grids, Buildings
 
 ## To do list
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
+- add tags for each post
+- add bikes post improved
+- author sidebar with kaggle link instead of twitter.
+- footer links : remove social medias.
+- Sample 404 page : add a funny image.
 - Site wide search.
+- Create a category for books and resize images, also change the about page with links to reviews
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
 
 ## References / Credits
 * [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)

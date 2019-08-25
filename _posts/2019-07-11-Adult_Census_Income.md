@@ -2,8 +2,8 @@
 title: "Adult Census Income"
 date: 2019-07-11
 categories:
-  - Projects
-tags: [Projects]
+  - Data Science
+tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-11-Adult_Census_Income/header.png"
 excerpt: "Predict whether income exceeds $50K/yr based on census data"

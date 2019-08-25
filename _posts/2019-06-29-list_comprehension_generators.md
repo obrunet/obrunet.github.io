@@ -2,8 +2,8 @@
 title: "List comprehensions and generators"
 date: 2019-06-29
 categories:
-  - Machine Learning
-tags: [Machine Learning]
+  - Data Science
+tags: [Machine Learning Basics]
 header:
   image: "/images/banner_code.png"
 excerpt: "How to use list comprehensions and generators with Python"

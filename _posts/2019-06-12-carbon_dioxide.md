@@ -2,8 +2,8 @@
 title: "Evolution of the carbon dioxide emissions over years"
 date: 2019-06-12
 categories:
-  - Projects
-tags: [Projects]
+  - Data Analysis
+tags: [Data Analysis]
 header:
   image: "/images/2019-06-12-carbon_dioxide/banner.jpg"
 excerpt: "Data analysis for each country per capita"

@@ -2,8 +2,8 @@
 title: "Mastering Python loops"
 date: 2019-06-27
 categories:
-  - Machine Learning
-tags: [Machine Learning]
+  - Data Science
+tags: [Machine Learning Basics]
 header:
   image: "/images/2019-06-27-writing_efficient_loops_in_python/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.png"
 excerpt: "How to master loops in Python"

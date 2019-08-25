@@ -2,8 +2,8 @@
 title: "Classify whether images contain either a dog or a cat. "
 date: 2019-07-07
 categories:
-  - Projects
-tags: [Projects]
+  - Data Science
+tags: [Kaggle Competitions, Computer Vision]
 header:
   image: "images/2019-07-07-dogs_vs_cats/cocker-spaniel-puppy-kissing-little-red-kitten-web-header.jpg"
 excerpt: "A classic Kaggle challenge using C.N.N (deep learning"

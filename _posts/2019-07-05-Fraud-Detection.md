@@ -2,8 +2,8 @@
 title: "Fraud Detection"
 date: 2019-07-05
 categories:
-  - Projects
-tags: [Projects]
+  - Data Science
+tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-05-Fraud-Detection/ryan-born-x8i6FfaZAbs-unsplash.jpg"
 excerpt: "Identify fraudulent credit card transactions based on logs"

@@ -3,7 +3,7 @@ title: "Is reality real ?"
 date: 2019-06-11
 categories:
   - Neuroscience
-tags: [Neuroscience]
+tags: [Neuroscience, Kurzgesagt]
 header:
   image: "/images/banner_neuroscience.png"
 excerpt: "How to be sure that we aren't living in a simulation?"

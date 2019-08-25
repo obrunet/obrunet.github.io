@@ -2,8 +2,8 @@
 title: "A comparison of C and Python"
 date: 2019-06-28
 categories:
-  - Machine Learning
-tags: [Machine Learning]
+  - Data Science
+tags: [Machine Learning Basics]
 header:
   image: "/images/banner_code.png"
 excerpt: "Few examples to write code in a Pythonic way"

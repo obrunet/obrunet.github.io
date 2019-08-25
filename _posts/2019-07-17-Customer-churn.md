@@ -2,8 +2,8 @@
 title: "Customer churn"
 date: 2019-07-17
 categories:
-  - Projects
-tags: [Projects]
+  - Data Science
+tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-17-Customer-churn/banner.png"
 excerpt: "Predict behavior to retain customers"

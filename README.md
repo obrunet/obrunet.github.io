@@ -8,13 +8,10 @@ Welcome to my web site, enjoy your stay.
 * Informations on Smart Cities, Grids, Buildings
 
 ## To do list
-- add tags for each post
-- add bikes post improved
 - author sidebar with kaggle link instead of twitter.
 - footer links : remove social medias.
 - Sample 404 page : add a funny image.
-- Add reversing eng posts & The Origin of Consciousness – How Unaware Things Became Aware
-- Create a category for books and resize images, also change the about page with links to reviews
+
 
 
 ## References / Credits
@@ -22,4 +19,32 @@ Welcome to my web site, enjoy your stay.
 * [Theme License](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE.txt)
 * [Jekyll](https://jekyllrb.com/)
 * [Ruby gems](https://rubygems.org/gems/minimal-mistakes-jekyll)
+
+## Next blog posts
+- add bikes post improved
+- Add reversing eng posts & The Origin of Consciousness – How Unaware Things Became Aware
+- https://www.youtube.com/watch?v=H6u0VBqNBQ8&list=PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu&index=2
+- What is consciousness? | The Economist
+- https://www.youtube.com/watch?v=ir8XITVmeY4
+- TEDx talks
+- Theories of mind
+- Best linux apps
+- books' reviews & resize images, also change the about page with links to reviews
+- reversing with lena + ams summary
+- Cheat sheets
+- bash summary
+- git basics
+
+Other Kaggle Challenges
+- https://www.kaggle.com/c/digit-recognizer
+- https://www.kaggle.com/c/word2vec-nlp-tutorial
+- https://www.kaggle.com/c/sf-crime
+- https://www.kaggle.com/c/pkdd-15-predict-taxi-service-trajectory-i
+- https://www.kaggle.com/c/facial-keypoints-detection
+- https://inclass.kaggle.com/c/morse-learning-machine-challenge-v2
+- https://www.kaggle.com/c/forest-cover-type-prediction
+- https://www.kaggle.com/c/random-acts-of-pizza
+- https://www.kaggle.com/c/titanic
+- https://www.kaggle.com/c/freesound-audio-tagging
+- https://www.kaggle.com/c/freesound-audio-tagging/data
 

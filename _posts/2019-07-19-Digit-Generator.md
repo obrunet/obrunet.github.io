@@ -702,48 +702,8 @@ for epoch in range(epochs):
     6113 [D loss: 0.636259, acc.: 60.94%] [G loss: 0.836715]
     6114 [D loss: 0.683264, acc.: 64.06%] [G loss: 0.868666]
     6115 [D loss: 0.617825, acc.: 70.31%] [G loss: 0.858657]
-    
-
-
+  
     ---------------------------------------------------------------------------
-
-    KeyboardInterrupt                         Traceback (most recent call last)
-
-    <ipython-input-87-9cdce6dc2e18> in <module>
-         39 
-         40     # Train the generator
-    ---> 41     g_loss = combined.train_on_batch(noise, valid_y)
-         42     g_loss_hist.append(g_loss)
-         43 
-    
-
-    ~/Anaconda/lib/python3.7/site-packages/tensorflow/python/keras/engine/training.py in train_on_batch(self, x, y, sample_weight, class_weight, reset_metrics)
-       1186       if reset_metrics:
-       1187         self._make_train_function()
-    -> 1188         outputs = self.train_function(ins)  # pylint: disable=not-callable
-       1189       else:
-       1190         self._make_fit_function()
-    
-
-    ~/Anaconda/lib/python3.7/site-packages/tensorflow/python/keras/backend.py in __call__(self, inputs)
-       3074 
-       3075     fetched = self._callable_fn(*array_vals,
-    -> 3076                                 run_metadata=self.run_metadata)
-       3077     self._call_fetch_callbacks(fetched[-len(self._fetches):])
-       3078     return nest.pack_sequence_as(self._outputs_structure,
-    
-
-    ~/Anaconda/lib/python3.7/site-packages/tensorflow/python/client/session.py in __call__(self, *args, **kwargs)
-       1437           ret = tf_session.TF_SessionRunCallable(
-       1438               self._session._session, self._handle, args, status,
-    -> 1439               run_metadata_ptr)
-       1440         if run_metadata:
-       1441           proto_data = tf_session.TF_GetBuffer(run_metadata_ptr)
-    
-
-    KeyboardInterrupt: 
-
-
 ---
 
 # Creation of new digits

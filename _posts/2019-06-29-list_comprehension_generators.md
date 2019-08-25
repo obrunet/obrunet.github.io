@@ -5,7 +5,7 @@ categories:
   - Data Science
 tags: [Machine Learning Basics]
 header:
-  image: "/images/banner_code.png"
+  image: "/images/banners/banner_code.png"
 excerpt: "How to use list comprehensions and generators with Python"
 mathjax: "true"
 ---

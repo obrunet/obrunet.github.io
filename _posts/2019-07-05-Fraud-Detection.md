@@ -11,8 +11,6 @@ mathjax: "true"
 ---
 
 Header photo by [Ryan Born](https://unsplash.com/@b0rno)
-
-
 # Credit Card Fraud Detection
 
 Anonymized credit card transactions labeled as fraudulent or genuine

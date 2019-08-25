@@ -1,17 +1,14 @@
 ---
-title: "House Prices: Advanced Regression Techniques"
+title: "House Prices"
 date: 2019-07-13
 categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-13-House_prices/housesbanner.png"
-excerpt: "Predict sales prices and practice feature engineering, RFs, and gradient boosting"
+excerpt: "Advanced Regression Techniques to predict sales prices and practice feature engineering, RFs, and gradient boosting"
 mathjax: "true"
 ---
-
-# House Prices: Advanced Regression Techniques
-
 ## Description
 Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this playground competition's dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
 

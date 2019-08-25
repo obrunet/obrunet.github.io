@@ -347,7 +347,7 @@ Keras expects input images to have 3 dimensions even if there is only one channe
 
 ## Theory
 
-![png](/images/2019-07-19-Digit-Generator/1*Fkdo567jgOrSHG49O90vCQ.png)
+![png](/images/2019-07-19-Digit-Generator/1_Fkdo567jgOrSHG49O90vCQ.png)
 
 Summary form [Towardsdatascience](https://towardsdatascience.com/image-generator-drawing-cartoons-with-generative-adversarial-networks-45e814ca9b6b)
 
@@ -359,7 +359,7 @@ With the following problem definition, GANs fall into the Unsupervised Learning 
 
 _The underlying idea behind GAN is that it contains two neural networks that compete against each other in a zero-sum game framework, i.e. generator and a discriminator._
 
-![png](/images/2019-07-19-Digit-Generator/1*JblpvnvQp1I5lL1-c9KsJw.png)
+![png](/images/2019-07-19-Digit-Generator/1_JblpvnvQp1I5lL1-c9KsJw.png)
 
 
 __Generator__
@@ -372,7 +372,7 @@ __Minimax Representation__
 If we think once again about Discriminator’s and Generator’s goals, we can see that they are opposing each other. Discriminator’s success is a Generator’s failure and vice-versa. That is why we can represent GANs framework more like Minimax game framework rather than an optimization problem.
 
 GAN data flow can be represented as in the following diagram.
-![png](/images/2019-07-19-Digit-Generator/1*cxnqsjXYP-lx-3afYsuxXQ.png)
+![png](/images/2019-07-19-Digit-Generator/1_cxnqsjXYP-lx-3afYsuxXQ.png)
 
 
 ## The Generator

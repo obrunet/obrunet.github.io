@@ -9,10 +9,7 @@ header:
 excerpt: "Predict whether income exceeds $50K/yr based on census data"
 mathjax: "true"
 ---
-
-# Adult Census Income
 Predict whether income exceeds $50K/yr based on census data
-
 ---
 
 Banner from a photo by [Sharon McCutcheon](https://unsplash.com/@sharonmccutcheon)

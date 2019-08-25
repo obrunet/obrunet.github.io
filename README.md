@@ -4,7 +4,7 @@ Welcome to my web site, enjoy your stay.
 
 ## Content
 * Datascience projects, explanations on machine learning models, deep learning studies
-* Opensource / Linux news
+* Opensource / Linux news / Cyber security
 * Informations on Smart Cities, Grids, Buildings
 
 ## To do list

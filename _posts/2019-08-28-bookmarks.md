@@ -29,7 +29,7 @@ This list is still under construction :)
 - [Dev Hints](https://devhints.io/)
 - [Developpez (french)](http://developpez.com)
 
-Leaning Linux:
+## Learning Linux:
 - [Linux Journey](https://linuxjourney.com/)
 - [The Linux Foundation](https://www.linuxfoundation.org/ )
 - [TecMint](https://www.tecmint.com/)
@@ -37,7 +37,6 @@ Leaning Linux:
 - [LinOxide](https://linoxide.com/)
 
 ## Linux / Open Source News
-- [Belinda Fewings](https://unsplash.com/@bel2000a)
 - [OMG Ubuntu](https://www.omgubuntu.co.uk/)
 - [nixCraft](https://www.cyberciti.biz/)
 - [It's FOSS](https://itsfoss.com/)

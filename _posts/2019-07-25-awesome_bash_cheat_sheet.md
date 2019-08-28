@@ -13,6 +13,7 @@ mathjax: "true"
 
 # SHORTCUTS
 
+```
 CTRL+A  # move to beginning of line
 CTRL+B  # moves backward one character
 CTRL+C  # halts the current command
@@ -44,7 +45,7 @@ ALT+F   # moves forward one word
 DELETE  # deletes one character backward
 !!      # repeats the last command
 exit    # logs out of current session
-
+```
 
 # BASH BASICS
 

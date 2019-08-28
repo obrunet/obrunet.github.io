@@ -10,11 +10,9 @@ excerpt: "Data Science challenge - Prediction of renting bicycles in Washington 
 mathjax: "true"
 ---
 
-# Bike Sharing Demand
 
-<img src="../input/christian-stahl-xmGkzY--Fgg-unsplash.jpg" style="height:300px">
 
-Photo by [Christian Stahl](https://unsplash.com/@woodpecker65)
+Banner photo by [Christian Stahl](https://unsplash.com/@woodpecker65)
 
 
 ## Context

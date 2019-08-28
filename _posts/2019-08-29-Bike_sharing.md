@@ -1,6 +1,6 @@
 ---
 title: "Forecast of city bikeshare system's use / rentals"
-date: 2019-08-28
+date: 2019-08-29
 categories:
   - Data Science
 tags: [Kaggle Competitions]

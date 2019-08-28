@@ -48,7 +48,7 @@ exit    # logs out of current session
 ```
 
 # BASH BASICS
-
+```
 env                 # displays all environment variables
 
 echo $SHELL         # displays the shell you're using
@@ -59,11 +59,11 @@ whereis bash        # finds out where bash is on your system
 which bash          # finds out which program is executed as 'bash' (default: /bin/bash, can change across environments)
 
 clear               # clears content on window (hide displayed lines)
-
+```
 
 # FILE COMMANDS
 
-
+```
 ls                            # lists your files in current directory, ls <dir> to print files in a specific directory
 ls -l                         # lists your files in 'long format', which contains the exact size of the file, who owns the file and who has the right to look at it, and when it was last modified
 ls -a                         # lists all files, including hidden files (name beginning with '.')
@@ -91,20 +91,20 @@ genscript                     # converts plain text files into postscript for pr
 dvips <filename>              # prints .dvi files (i.e. files produced by LaTeX)
 grep <pattern> <filenames>    # looks for the string in the files
 grep -r <pattern> <dir>       # search recursively for pattern in directory
-
+```
 
 # DIRECTORY COMMANDS
 
-
+```
 mkdir <dirname>  # makes a new directory
 cd               # changes to home
 cd <dirname>     # changes directory
 pwd              # tells you where you currently are
-
+```
 
 # SSH, SYSTEM INFO & NETWORK COMMANDS
 
-
+```
 ssh user@host            # connects to host as user
 ssh -p <port> user@host  # connects to host on specified port as user
 ssh-copy-id user@host    # adds your ssh key to host for user to enable a keyed or passwordless login
@@ -135,11 +135,11 @@ whois <domain>           # gets whois information for domain
 dig <domain>             # gets DNS information for domain
 dig -x <host>            # reverses lookup host
 wget <file>              # downloads file
-
+```
 
 # VARIABLES
 
-
+```
 varname=value                # defines a variable
 varname=value command        # defines a variable to be in the environment of a particular subprocess
 echo $varname                # checks a variable's value
@@ -187,11 +187,11 @@ ${#varname}                  # returns the length of the value of the variable a
 !(patternlist)               # matches anything except one of the given patterns
 
 $(UNIX command)              # command substitution: runs the command and returns standard output
-
+```
 
 # FUNCTIONS
 
-
+```
 # The function refers to passed arguments by position (as if they were positional parameters), that is, $1, $2, and so forth.
 # $@ is equal to "$1" "$2"... "$N", where N is the number of positional parameters. $# holds the number of positional parameters.
 
@@ -202,28 +202,28 @@ function functname() {
 
 unset -f functname  # deletes a function definition
 declare -f          # displays all defined functions in your login session
-
+```
 
 # FLOW CONTROLS
 
-
+```
 statement1 && statement2  # and operator
 statement1 || statement2  # or operator
 
 -a                        # and operator inside a test conditional expression
 -o                        # or operator inside a test conditional expression
-
+```
 # STRINGS
-
+```
 str1 == str2               # str1 matches str2
 str1 != str2               # str1 does not match str2
 str1 < str2                # str1 is less than str2 (alphabetically)
 str1 > str2                # str1 is greater than str2 (alphabetically)
 -n str1                    # str1 is not null (has length greater than 0)
 -z str1                    # str1 is null (has length 0)
-
+```
 # FILES
-
+```
 -a file                   # file exists
 -d file                   # file exists and is a directory
 -e file                   # file exists; same -a
@@ -237,9 +237,9 @@ str1 > str2                # str1 is greater than str2 (alphabetically)
 -G file                   # file's group ID matches yours (or one of yours, if you are in multiple groups)
 file1 -nt file2           # file1 is newer than file2
 file1 -ot file2           # file1 is older than file2
-
+```
 # NUMBERS
-
+```
 -lt                       # less than
 -le                       # less than or equal
 -eq                       # equal
@@ -290,10 +290,10 @@ done
 until condition; do
   statements
 done
-
+```
 # COMMAND-LINE PROCESSING CYCLE
 
-
+```
 # The default order for command lookup is functions, followed by built-ins, with scripts and executables last.
 # There are three built-ins that you can use to override this order: `command`, `builtin` and `enable`.
 
@@ -302,11 +302,11 @@ builtin  # looks up only built-in commands, ignoring functions and commands foun
 enable   # enables and disables shell built-ins
 
 eval     # takes arguments and run them through the command-line processing steps all over again
-
+```
 
 # INPUT/OUTPUT REDIRECTORS
 
-
+```
 cmd1|cmd2  # pipe; takes standard output of cmd1 as standard input to cmd2
 < file     # takes standard input from file
 > file     # directs standard output to file
@@ -327,11 +327,11 @@ n<&m       # file descriptor n is made to be a copy of the input file descriptor
 >&-        # closes the standard output
 n>&-       # closes the ouput from file descriptor n
 n<&-       # closes the input from file descripor n
-
+```
 
 # PROCESS HANDLING
 
-
+```
 # To suspend a job, type CTRL+Z while it is running. You can also suspend a job with CTRL+Y.
 # This is slightly different from CTRL+Z in that the process is only stopped when it attempts to read input from terminal.
 # Of course, to interrupt a job, type CTRL+C.
@@ -360,11 +360,11 @@ trap - sig1 sig2    # resets the action taken when the signal is received to the
 disown <PID|JID>    # removes the process from the list of jobs
 
 wait                # waits until all background jobs have finished
-
+```
 
 # TIPS & TRICKS
 
-
+```
 # set an alias
 cd; nano .bash_profile
 > alias gentlenode='ssh admin@gentlenode.com -p 3404'  # add your alias in .bash_profile
@@ -376,11 +376,11 @@ cd; nano .bashrc
 
 source .bashrc
 cd $websites
-
+```
 
 # DEBUGGING SHELL PROGRAMS
 
-
+```
 bash -n scriptname  # don't run commands; check for syntax errors only
 set -o noexec       # alternative (set option in script)
 
@@ -412,3 +412,4 @@ function returntrap {
 }
 
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
+```

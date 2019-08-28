@@ -26,6 +26,7 @@ This list is still under construction :)
 - [Korben (french)](https://korben.info)
 
 ## Programming:
+- [Dev Hints](https://devhints.io/)
 - [Developpez (french)](http://developpez.com)
 
 Leaning Linux:

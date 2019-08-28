@@ -12,9 +12,9 @@ mathjax: "true"
 
 There are plenty of other / more sophisticated commands which you will one day learn. But for now, this list will provide you with your Linux CLI command foundation.
 
-At the end of the list, some vital information you need to use the Linux CLI.
+At the end of the list, you'll find some vital informations you need to use the Linux CLI.
 
-##1. ls
+## 1. ls
 
 The ls command - the list command - functions in the Linux terminal to show all of the major directories filed under a given file system. For example, the following command will show the user all of the folders stored in the overall applications folder.:
 
@@ -24,7 +24,7 @@ ls /applications
 
 The ls command is used for viewing files, folders and directories.
 
-##2. cd
+## 2. cd
 
 The cd command - change directory - will allow the user to change between file directories. As the name command name suggest, you would use the cd command to circulate between two different directories. For example, if you wanted to change from the home directory to the Arora directory, you would input the following command:
 
@@ -34,7 +34,7 @@ cd/arora/applications
 
 As you might have noted, the path name listed lists in reverse order. Logically cd/arora/applications reads change to the arora directory which is stored in the applications directory. All Linux commands follow a logical path.
 
-##3. mv
+## 3. mv
 
 The mv command - move - allows a user to move a file to another folder or directory. Just like dragging a file located on a PC desktop to a folder stored within the "Documents" folder, the mv command functions in the same manner. An example of the mv command is:
 
@@ -44,7 +44,7 @@ mv/arora/applications/majorapps /arora/applications/minorapps
 
 The first part of the command mv/arora/applications/majorapps lists the application to be moved. In this case, arora. The second part of the command /arora/applications/minorapps lists where arora will be moved to - from majorapps to minorapps.
 
-##4. man
+## 4. man
 
 The man command - the manual command - is used to show the manual of the inputted command. Just like a film on the nature of film, the man command is the meta command of the Linux CLI. Inputting the man command will show you all information about the command you are using. An example:
 
@@ -54,7 +54,7 @@ man cd
 
 The inputting command will show the manual or all relevant information for the change directory command.
 
-##5. mkdir
+## 5. mkdir
 
 The mkdir - make directory - command allows the user to make a new directory. Just like making a new directory within a PC or Mac desktop environment, the mkdir command makes new directories in a Linux environment. An example of the mkdir command
 
@@ -64,7 +64,7 @@ mkdir testdirectory
 
 The example command made the directory "testdirectory".
 
-##6. rmdir
+## 6. rmdir
 
 The rmdir - remove directory - command allows the user to remove an existing command using the Linux CLI. An example of the rmdir command:
 
@@ -76,7 +76,7 @@ The example command removed the directory "testdirectory".
 
 It should be noted: both the mkdir and rmdir commands make and remove directories. They do not make files and they will also not remove a directory which has files in it. The mkdir will make an empty directory and the rmdir command will remove an empty directory.
 
-##7. touch
+## 7. touch
 
 The touch command - a.k.a. the make file command - allows users to make files using the Linux CLI. Just as the mkdir command makes directories, the touch command makes files. Just as you would make a .doc or a .txt using a PC desktop, the touch command makes empty files. An example of the touch command:
 
@@ -86,7 +86,7 @@ touch testfile.txt
 
 that effectively created the file testfile.txt. As noted by the extension, the file created is a .txt or text file. To equate, a .txt file in Linux is akin to a .txt notebook file within a Windows or Mac OS.
 
-##8. rm
+## 8. rm
 
 The rm command - remove - like the rmdir command is meant to remove files from your Linux OS. Whereas the rmdir command will remove directories and files held within, the rm command will delete created files. An example of the rm command:
 
@@ -96,7 +96,7 @@ rm testfile.txt
 
 The aforementioned command removed testfile.txt. Interestingly, whereas the rmdir command will only delete an empty directory, the rm command will remove both files and directories with files in it. This said, the rm command carries more weight than the rmdir command and should be used with more specificity.
 
-##9. locate
+## 9. locate
 
 The locate - a.k.a. find - command is meant to find a file within the Linux OS. If you don't know the name of a certain file or you aren't sure where the file is saved and stored, the locate command comes in handy. A locate command example:
 
@@ -108,11 +108,11 @@ The stated command will locate an file with the a file name containing "Red", "H
 
 By specifying -i with wildcards, the locate CLI command will pull back all files containing your search criteria effectivley casting the widest search net the system will allow.
 
-##10. clear
+## 10. clear
 
 The clear command does exactly what it says. When your Linux CLI gets all mucked up with various readouts and information, the clear command clears the screen and wipes the board clean. Using the clear command will take the user back to the start prompt of whatever directory you are currently operating in. To use the clear command simply type clear.
 
-##Getting to Know Linux:
+## Getting to Know Linux:
 
 Having a basic understanding on Linux CLI commands will allow any user to navigate around the Linux shell. This said, there are some basic things about Linux you need to know to more fully operate in the shell. These basics are as follows:
 

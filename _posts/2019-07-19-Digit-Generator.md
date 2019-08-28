@@ -1,12 +1,12 @@
 ---
-title: "Hand Written Digit Generation with a G.A.N - Generative Deep Learning"
+title: "Hand Written Digit Generation with a G.A.N"
 date: 2019-07-19
 categories:
   - Data Science
 tags: [Kaggle Competitions, Computer Vision, G.A.N]
 header:
   image: "/images/2019-07-19-Digit-Generator/banner.png"
-excerpt: "Basic concepts of GAN (discriminator / generator) to produce digits similar to hand written ones"
+excerpt: "Basic concepts of Generatives Adversial Networks (Deep Learning) with discriminator & generator, to produce digits similar to hand written ones"
 mathjax: "true"
 ---
 

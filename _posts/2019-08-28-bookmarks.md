@@ -57,5 +57,4 @@ This list is still under construction :)
 - [Darknet Live](https://darknetlive.com/)
 - [Recorded Future](https://www.recordedfuture.com/blog/)
 - [We Live Security by ESET](https://www.welivesecurity.com/)
-- [Securelist | Kaspersky’s cyberthreat research and reports](https://securelist.com/)
-
+- [Securelist - Kaspersky’s cyberthreat research and reports](https://securelist.com)

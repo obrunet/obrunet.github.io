@@ -1,12 +1,12 @@
 ---
-title: "Home Credit Default Risk"
+title: "Kaggle Challenge: Home Credit Default Risk"
 date: 2019-07-19
 categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-21-Home_credit_default_risk/banner.png"
-excerpt: "Predict how capable each applicant is of repaying a loan"
+excerpt: "How capable each applicant is of repaying a loan? Various machine learning models will answer that question"
 mathjax: "true"
 ---
 

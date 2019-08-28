@@ -1,12 +1,12 @@
 ---
-title: "Fraud Detection"
+title: "Fraud Detection: is this transaction genuine?"
 date: 2019-07-05
 categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-05-Fraud-Detection/ryan-born-x8i6FfaZAbs-unsplash.jpg"
-excerpt: "Identify fraudulent credit card transactions based on logs"
+excerpt: "Data Science can help to identify fraudulent credit card transactions based on logs"
 mathjax: "true"
 ---
 

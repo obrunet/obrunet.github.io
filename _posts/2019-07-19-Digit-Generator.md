@@ -1,5 +1,5 @@
 ---
-title: "Hand written digit generation with a G.A.N "
+title: "Hand Written Digit Generation with a G.A.N - Generative Deep Learning"
 date: 2019-07-19
 categories:
   - Data Science

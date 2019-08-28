@@ -1,5 +1,5 @@
 ---
-title: "Evolution of the carbon dioxide emissions over years"
+title: "Evolution of the Carbon Dioxide Emissions over Years"
 date: 2019-06-12
 categories:
   - Data Analysis

@@ -1,12 +1,12 @@
 ---
-title: "Example of the implementation of an Hybrid Recommendation Engine"
+title: "Implementation of an Hybrid Recommendation Engine"
 date: 2019-07-09
 categories:
   - Data Science
 tags: [Kaggle Competitions, Recommendation Engine]
 header:
   image: "/images/2019-07-09-Hybrid_Recommendation_Engine/photo-1489599849927-2ee91cede3ba.jpeg"
-excerpt: "Using the dataset 'MovieLens and the LightFM library"
+excerpt: "Data science study using the dataset 'MovieLens and the LightFM library"
 mathjax: "true"
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: "House Prices"
+title: "Advanced Regression Techniques to predict House Prices"
 date: 2019-07-13
 categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-13-House_prices/housesbanner.png"
-excerpt: "Advanced Regression Techniques to predict sales prices and practice feature engineering, RFs, and gradient boosting"
+excerpt: "An other data science project intended to feature engineering practice, RFs, and gradient boosting"
 mathjax: "true"
 ---
 ## Description

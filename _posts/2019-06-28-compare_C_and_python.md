@@ -1,5 +1,5 @@
 ---
-title: "A comparison of C and Python"
+title: "A Comparison of C and Python"
 date: 2019-06-28
 categories:
   - Data Science

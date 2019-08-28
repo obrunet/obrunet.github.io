@@ -1,5 +1,5 @@
 ---
-title: "List comprehensions and generators"
+title: "List Comprehensions and Generators"
 date: 2019-06-29
 categories:
   - Data Science

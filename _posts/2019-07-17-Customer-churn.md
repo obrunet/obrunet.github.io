@@ -1,12 +1,12 @@
 ---
-title: "Customer churn"
+title: "How to Minimize Customer Churn"
 date: 2019-07-17
 categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
   image: "/images/2019-07-17-Customer-churn/banner.png"
-excerpt: "Predict behavior to retain customers"
+excerpt: "Predict behavior to retain customers before the leave..."
 mathjax: "true"
 ---
 

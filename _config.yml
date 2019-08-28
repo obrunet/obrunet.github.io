@@ -60,7 +60,7 @@ plugins:
 author:
   name   : Olivier Brunet
   avatar : "/images/bio.jpg"
-  bio    : "Data Scientist - Linux & Deep Learning Enthusiast"
+  bio    : "Data Scientist - Linux & Deep   Learning Enthusiast"
   location  : "Courbevoie / Paris Area, FR"
   kaggle  : "https://www.kaggle.com/obrunet"
   linkedin  : "olivier-brunet-16a2312a"

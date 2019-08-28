@@ -1,6 +1,6 @@
 ---
 title: "Awesome Bash Cheat Sheet"
-date: 2019-06-13
+date: 2019-07-25
 categories:
   - Linux / Open source
 tags: [Linux]

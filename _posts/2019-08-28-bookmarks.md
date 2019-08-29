@@ -50,11 +50,11 @@ __A.I & Data Science__
 - [OpenAI](https://openai.com/)
 
 __Cyber Security__
+- [We Live Security by ESET](https://www.welivesecurity.com/)
+- [Securelist - Kaspersky’s cyberthreat research and reports](https://securelist.com)
 - [Bleeping Computer](https://www.bleepingcomputer.com/)
 - [Cyber Scoop](https://www.cyberscoop.com/)
 - [Belling Cat](https://www.bellingcat.com/)
 - [Security Affairs](https://securityaffairs.co/wordpress/)
 - [Darknet Live](https://darknetlive.com/)
 - [Recorded Future](https://www.recordedfuture.com/blog/)
-- [We Live Security by ESET](https://www.welivesecurity.com/)
-- [Securelist - Kaspersky’s cyberthreat research and reports](https://securelist.com)

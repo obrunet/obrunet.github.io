@@ -36,15 +36,20 @@ Welcome to my web site, enjoy your stay.
 - git basics
 
 Other Kaggle Challenges
+
 - https://www.kaggle.com/c/digit-recognizer
+- https://www.kaggle.com/c/facial-keypoints-detection
+
+
 - https://www.kaggle.com/c/word2vec-nlp-tutorial
+
+- https://www.kaggle.com/c/freesound-audio-tagging
+
+
 - https://www.kaggle.com/c/sf-crime
 - https://www.kaggle.com/c/pkdd-15-predict-taxi-service-trajectory-i
-- https://www.kaggle.com/c/facial-keypoints-detection
-- https://inclass.kaggle.com/c/morse-learning-machine-challenge-v2
 - https://www.kaggle.com/c/forest-cover-type-prediction
 - https://www.kaggle.com/c/random-acts-of-pizza
 - https://www.kaggle.com/c/titanic
-- https://www.kaggle.com/c/freesound-audio-tagging
-- https://www.kaggle.com/c/freesound-audio-tagging/data
+
 

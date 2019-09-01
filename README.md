@@ -46,8 +46,10 @@ CV
 
 NLP
 - https://www.kaggle.com/c/word2vec-nlp-tutorial
-- other N.L.P challs
-
+- https://www.kaggle.com/c/quora-question-pairs/overview
+- https://www.kaggle.com/c/quora-insincere-questions-classification
+- https://www.kaggle.com/snap/amazon-fine-food-reviews
+- https://www.kaggle.com/bittlingmayer/amazonreviews
 
 Audio
 - https://www.kaggle.com/c/freesound-audio-tagging

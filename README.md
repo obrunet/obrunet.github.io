@@ -35,8 +35,7 @@ Welcome to my web site, enjoy your stay.
 - bash summary
 - git basics
 
-Other Kaggle Challenges
-CV
+Other Kaggle Challenges - CV
 - https://www.kaggle.com/c/digit-recognizer
 - https://www.kaggle.com/c/facial-keypoints-detection
 - This person does not exist (with celebrities images from Kaggle)
@@ -44,17 +43,17 @@ CV
 - https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
 - https://www.kaggle.com/xiaotawkaggle/inhibitors
 
-NLP
+Other Kaggle Challenges - NLP
 - https://www.kaggle.com/c/word2vec-nlp-tutorial
 - https://www.kaggle.com/c/quora-question-pairs/overview
 - https://www.kaggle.com/c/quora-insincere-questions-classification
 - https://www.kaggle.com/snap/amazon-fine-food-reviews
 - https://www.kaggle.com/bittlingmayer/amazonreviews
 
-Audio
+Other Kaggle Challenges - Audio
 - https://www.kaggle.com/c/freesound-audio-tagging
 
-
+Other Kaggle Challenges
 - https://www.kaggle.com/c/sf-crime
 - https://www.kaggle.com/c/pkdd-15-predict-taxi-service-trajectory-i
 - https://www.kaggle.com/c/forest-cover-type-prediction

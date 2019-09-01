@@ -21,7 +21,7 @@ Welcome to my web site, enjoy your stay.
 * [Ruby gems](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
 ## Next blog posts
-- add bikes post improved
+
 - Add reversing eng posts & The Origin of Consciousness – How Unaware Things Became Aware
 - https://www.youtube.com/watch?v=H6u0VBqNBQ8&list=PLFs4vir_WsTySi9F8v5pvCi6zQj7Cwneu&index=2
 - What is consciousness? | The Economist
@@ -30,7 +30,7 @@ Welcome to my web site, enjoy your stay.
 - Theories of mind
 - Best linux apps
 - books' reviews & resize images, also change the about page with links to reviews
-- reversing with lena + ams summary
+- reversing with lena + asm summary
 - Cheat sheets
 - bash summary
 - git basics

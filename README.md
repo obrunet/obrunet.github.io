@@ -40,6 +40,9 @@ CV
 - https://www.kaggle.com/c/digit-recognizer
 - https://www.kaggle.com/c/facial-keypoints-detection
 - This person does not exist (with celebrities images from Kaggle)
+- https://www.kaggle.com/uciml/breast-cancer-wisconsin-data
+- https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+- https://www.kaggle.com/xiaotawkaggle/inhibitors
 
 NLP
 - https://www.kaggle.com/c/word2vec-nlp-tutorial

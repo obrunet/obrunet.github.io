@@ -36,13 +36,17 @@ Welcome to my web site, enjoy your stay.
 - git basics
 
 Other Kaggle Challenges
-
+CV
 - https://www.kaggle.com/c/digit-recognizer
 - https://www.kaggle.com/c/facial-keypoints-detection
+- This person does not exist (with celebrities images from Kaggle)
 
-
+NLP
 - https://www.kaggle.com/c/word2vec-nlp-tutorial
+- other N.L.P challs
 
+
+Audio
 - https://www.kaggle.com/c/freesound-audio-tagging
 
 

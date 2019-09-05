@@ -7,13 +7,6 @@ Welcome to my web site, enjoy your stay.
 * Opensource / Linux news / Cyber security
 * Informations on Smart Cities, Grids, Buildings
 
-## To do list
-- author sidebar with kaggle link instead of twitter.
-- footer links : remove social medias.
-- Sample 404 page : add a funny image.
-
-
-
 ## References / Credits
 * [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/)
 * [Theme License](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE.txt)

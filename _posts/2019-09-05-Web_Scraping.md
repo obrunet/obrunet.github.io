@@ -129,18 +129,18 @@ links = soup.find_all("a")
 ```
 
 Look for all tags with a specific class attribute 
-
+```
 (eg <li class="search-result">...</li>)
-
+```
 
 ```python
 tags = soup.find_all("li", "search-result")
 ```
 
 Look for the tag with a specific ID attribute
-
+```
 eg: <div id="bar">...</div>)
-
+```
 
 ```python
 tag = soup.find("div", id="bar")
@@ -220,6 +220,7 @@ Probably the most basic thing you can do is write your extracted items to a CSV 
 
 In order for the spreadsheet to make sense and have consistent columns, you need to make sure all of the items that you’ve extracted have their properties in the same order. This isn’t usually a problem if the lists are created consistently.
 
+```python
 import csv
 ...
 with open("~/Desktop/output.csv", "w") as f:
@@ -233,10 +234,10 @@ with open("~/Desktop/output.csv", "w") as f:
 
     for item_property_list in collected_items:
         writer.writerow(item_property_list)
-        
+ ```       
 
 If you’re extracting lots of properties about each item, sometimes it’s more useful to store the item as a python dict instead of having to remember the order of columns within a row. The csv module has a handy DictWriter that keeps track of which column is for writing which dict key.
-
+```python
 import csv
 ...
 field_names = ["Product Name", "Price", "Detail URL"]
@@ -257,11 +258,11 @@ with open("~/Desktop/output.csv", "w") as f:
 
     for item_property_dict in collected_items:
         writer.writerow(item_property_dict)
-        
+ ```       
 
 ### Writing to a SQLite Database
 You can also use a simple SQL insert if you’d prefer to store your data in a database for later querying and retrieval.
-
+```python
 import sqlite3
 
 conn = sqlite3.connect("/tmp/output.sqlite")
@@ -271,7 +272,7 @@ for item in collected_items:
     cur.execute("INSERT INTO scraped_data (title, price, url) values (?, ?, ?)",
         (item["title"], item["price"], item["url"])
     )
-
+```
 # More Advanced Topics
 These aren’t really things you’ll need if you’re building a simple, small scale scraper for 90% of websites. But they’re useful tricks to keep up your sleeve.
 
@@ -283,16 +284,16 @@ It usually means that you won’t be making an HTTP request to the page’s URL 
 There’s not really an easy code snippet I can show here, but if you open the Chrome or Firefox Developer Tools, you can load the page, go to the “Network” tab and then look through the all of the requests that are being sent in the background to find the one that’s returning the data you’re looking for. Start by filtering the requests to only XHR or JS to make this easier.
 
 Once you find the AJAX request that returns the data you’re hoping to scrape, then you can make your scraper send requests to this URL, instead of to the parent page’s URL. If you’re lucky, the response will be encoded with JSON which is even easier to parse than HTML.
-
+```python
 print r.json()  # returns a python dict, no need for BeautifulSoup
-
+```
 ### Content Inside Iframes
 This is another topic that causes a lot of hand wringing for no reason. Sometimes the page you’re trying to scrape doesn’t actually contain the data in its HTML, but instead it loads the data inside an iframe.
 
 Again, it’s just a matter of making the request to the right URL to get the data back that you want. Make a request to the outer page, find the iframe, and then make another HTTP request to the iframe’s src attribute.
-
+```python
 inner_content = requests.get(soup.find("iframe")["src"])
-
+```
 ### Sessions and Cookies
 While HTTP is stateless, sometimes you want to use cookies to identify yourself consistently across requests to the site you’re scraping.
 
@@ -317,7 +318,7 @@ r = session.get("http://example.com/protected_page")
 
 ### Delays and Backing Off
 If you want to be polite and not overwhelm the target site you’re scraping, you can introduce an intentional delay or lag in your scraper to slow it down
-
+```python
 import time
 
 for term in ["web scraping", "web crawling", "scrape this site"]:
@@ -325,9 +326,9 @@ for term in ["web scraping", "web crawling", "scrape this site"]:
         query=term
     ))
     time.sleep(5)  # wait 5 seconds before we make the next request
-
+```
 Some also recommend adding a backoff that’s proportional to how long the site took to respond to your request. That way if the site gets overwhelmed and starts to slow down, your code will automatically back off.
-
+```python
 import time
 
 for term in ["web scraping", "web crawling", "scrape this site"]:
@@ -337,46 +338,46 @@ for term in ["web scraping", "web crawling", "scrape this site"]:
     ))
     response_delay = time.time() - t0
     time.sleep(10*response_delay)  # wait 10x longer than it took them to respond
-    
+```  
 
 ### Spoofing the User Agent
 By default, the requests library sets the User-Agent header on each request to something like “python-requests/2.12.4”. You might want to change it to identify your web scraper, perhaps providing a contact email address so that an admin from the target website can reach out if they see you in their logs.
 
 More commonly, this is used to make it appear that the request is coming from a normal web browser, and not a web scraping program.
-
+```python
 headers = {
     "User-Agent": "my web scraping program. contact me at admin@domain.com"
 }
 r = requests.get("http://example.com", headers=headers)
-
+```
 ### Using Proxy Servers
 Even if you spoof your User Agent, the site you are scraping can still see your IP address, since they have to know where to send the response.
 
 If you’d like to obfuscate where the request is coming from, you can use a proxy server in between you and the target site. The scraped site will see the request coming from that server instead of your actual scraping machine.
-
+```python
 r = requests.get("http://example.com/", proxies=dict(
     http="http://proxy_user:proxy_pass@104.255.255.255:port",
 ))
-
+```
 If you’d like to make your requests appear to be spread out across many IP addresses, then you’ll need access to many different proxy servers. You can keep track of them in a list and then have your scraping program simply go down the list, picking off the next one for each new request, so that the proxy servers get even rotation.
 
 ### Setting Timeouts
 If you’re experiencing slow connections and would prefer that your scraper moved on to something else, you can specify a timeout on your requests.
-
+```python
 try:
     requests.get("http://example.com", timeout=10)  # wait up to 10 seconds
 except requests.exceptions.Timeout:
     pass  # handle the timeout
-    
+```    
 
 ### Handling Network Errors
 Just as you should never trust user input in web applications, you shouldn’t trust the network to behave well on large web scraping projects. Eventually you’ll hit closed connections, SSL errors or other intermittent failures.
-
+```python
 try:
     requests.get("http://example.com")
 except requests.exceptions.RequestException:
     pass  # handle the exception. maybe wait and try again later
-  
+``` 
 
 # Practice
 You'll find [here](https://scrapethissite.com/) a free sandbox website that’s designed to be easy for beginners to scrape.

@@ -168,9 +168,9 @@ inner_contents = soup.find("div", id="price").contents
 ```
 
 Return only the text contents within this tag, but ignore the text representation of other HTML tags (useful for stripping our pesky 
-
+```
 <span>, <strong>, <i>, 
-
+```
 or other inline tags that might show up sometimes)
 
 

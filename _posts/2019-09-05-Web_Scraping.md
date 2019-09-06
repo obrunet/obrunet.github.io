@@ -3,7 +3,7 @@ title: "Web Scraping with Python Cheat Sheet "
 date: 2019-09-05
 categories:
   - Data Science
-tags: [Web Scraping]
+tags: [Machine Learning Basics]
 header:
   image: "/images/banners/banner_code.png"
 excerpt: "The most commonly used code snippets and patterns for easy reference"

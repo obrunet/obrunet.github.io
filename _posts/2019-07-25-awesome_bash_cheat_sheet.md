@@ -414,4 +414,4 @@ function returntrap {
 trap returntrap RETURN  # is executed each time a shell function or a script executed with the . or source commands finishes executing
 ```
 
-Sources & credits: https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh
+Sources & credits: [LeCoupa](https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh)

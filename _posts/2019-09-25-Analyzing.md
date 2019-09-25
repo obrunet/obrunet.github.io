@@ -14,7 +14,7 @@ Theses slides are taken from the Lynda / Linkedin Learning course intitled ["Big
 
 *Despite the excitement around "data science," "big data," and "analytics," the ambiguity of these terms has led to poor communication between data scientists and organizations seeking their help. In this report, authors Harlan Harris, Sean Murphy, and Marck Vaisman examine their survey of several hundred data science practitioners in mid-2012, when they asked respondents how they viewed their skills, careers, and experiences with prospective employers. The results are striking.*
 
-### Clustering Data Scientists
+## Clustering Data Scientists
 
 Four clusters in the responses have been identified.
 

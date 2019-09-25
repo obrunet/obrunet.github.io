@@ -52,8 +52,9 @@ __A.I & Data Science__
 - [Wired UK](https://www.wired.co.uk/topic/artificial-intelligence)
 - [The Verge](https://www.theverge.com/ai-artificial-intelligence)
 - [Towards Data Science](https://towardsdatascience.com/)
-- [DeepMing](https://deepmind.com/blog)
-- [OpenAI](https://openai.com/)
+- [DeepMind](https://deepmind.com/blog)
+- [OpenAI](https://openai.com/blog/)
+- [Lion Bridge](https://www.lionbridge.com/artificial-intelligence/)
 
 __Cyber Security__
 - [We Live Security by ESET](https://www.welivesecurity.com/)

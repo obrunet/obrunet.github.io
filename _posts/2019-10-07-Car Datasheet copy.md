@@ -129,7 +129,3 @@ which isn't a success"
     soup = BeautifulSoup(source, 'html.parser')
     process_car_blocks(soup)
 ```
-
-
-
-You can also subscribe to my blog to get emailed when I release new articles.

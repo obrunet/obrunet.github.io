@@ -15,6 +15,7 @@ Welcome to my web site, enjoy your stay.
 
 ## Next blog posts
 
+- Notebooks of the EDA of the scraped Car datasheet
 - TEDx talks
 - Theories of mind
 - Best linux apps

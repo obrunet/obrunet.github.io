@@ -1,6 +1,6 @@
 ---
 title: "Scraping the Pokemon's database"
-date: 2019-10-20
+date: 2019-10-27
 categories:
   - Data Science
 tags: [Web scraping]

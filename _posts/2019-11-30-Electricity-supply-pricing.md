@@ -12,7 +12,7 @@ mathjax: "true"
 
 Photo by Federico Beccari on Unsplash 
 
-This is the 2nd part of a data science challenge organized by the E.N.S, after the 1st first and the exploratory data analysis, i'm going to train various machine learning models including some deep learning with tensorflow.
+This is the 2nd part of a data science challenge organized by the E.N.S, after the 1st first part and the exploratory data analysis, i'm going to train various machine learning models including some deep learning with tensorflow.
 
 # Predictions with various types of ML models
 

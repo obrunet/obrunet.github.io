@@ -195,8 +195,11 @@ A CNN is sequence of convolution layers pooling layers between, finished by a fu
  The role of the ConvNet is to reduce the RGB images into a form which is easier to process, without losing features which are critical for getting a good prediction.
  
 __Convolution Layer — The Kernel__
+
  ![gif](/images/2019-07-07-dogs_vs_cats/1_ciDgQEjViWLnCbmX-EeSrA.gif)
+
  The filter or kernel moves to the right with a certain Stride Value till it parses the complete width. Moving on, it hops down to the beginning (left) of the image with the same Stride Value and repeats the process until the entire image is traversed.
+
  ![gif](/images/2019-07-07-dogs_vs_cats/1_nYf_cUIHFEWU1JXGwnz-Ig (1).gif)
 
 
@@ -204,7 +207,6 @@ __Convolution Layer — The Kernel__
  
  __Pooling Layer__
 
- 
 ![gif](/images/2019-07-07-dogs_vs_cats/1_uoWYsCV5vBU8SHFPAPao-w.gif)
 
 

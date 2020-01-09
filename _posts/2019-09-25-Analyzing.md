@@ -3,9 +3,9 @@ title: "Analyzing the Analyzers"
 date: 2019-09-25
 categories:
   - Data Science
-tags: [Machine Learning Basics]
+tags: [Misc]
 header:
-  image: "/images/banners/banner_code.png"
+  image: "/images/banners/banner_code.jpg"
 excerpt: "Self notes and few diagrams from an O'reilly Survey of Data Scientists and Their Work"
 mathjax: "true"
 ---

@@ -21,6 +21,14 @@ Also interested in Linux and Open Sources projects during my spare time :). I us
 
 ## Books 
 
+* [Data Science par la pratique: Fondamentaux avec Python](https://www.amazon.fr/Data-Science-par-pratique-Fondamentaux/dp/2212118686)
+* [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.amazon.fr/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291)
+* [TensorFlow for Deep Learning](http://shop.oreilly.com/product/0636920065869.do)
+* [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
+* [Maîtrisez l'utilisation des technologies Hadoop](https://www.eyrolles.com/Informatique/Livre/maitrisez-l-utilisation-des-technologies-hadoop-9782212674781/)
+* [Big data et machine learning](https://www.eyrolles.com/Informatique/Livre/big-data-et-machine-learning-9782100790371/)
+
+
 * [Life 3.0: Being Human in the Age of Artificial Intelligence](https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence/dp/1101946598)
 * [La guerre des intelligences](https://livre.fnac.com/a10637897/Laurent-Alexandre-La-guerre-des-intelligences)
 * [The Technological Singularity](https://mitpress.mit.edu/books/technological-singularity)
@@ -33,9 +41,3 @@ Also interested in Linux and Open Sources projects during my spare time :). I us
 * [Un monde meilleur - Et si l'intelligence artificielle humanisait notre futur ?](https://www.eyrolles.com/Informatique/Livre/un-monde-meilleur-9782840019480/)
 
 
-* [Data Science par la pratique: Fondamentaux avec Python](https://www.amazon.fr/Data-Science-par-pratique-Fondamentaux/dp/2212118686)
-* [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.amazon.fr/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291)
-* [TensorFlow for Deep Learning](http://shop.oreilly.com/product/0636920065869.do)
-* [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
-* [Maîtrisez l'utilisation des technologies Hadoop](https://www.eyrolles.com/Informatique/Livre/maitrisez-l-utilisation-des-technologies-hadoop-9782212674781/)
-* [Big data et machine learning](https://www.eyrolles.com/Informatique/Livre/big-data-et-machine-learning-9782100790371/)

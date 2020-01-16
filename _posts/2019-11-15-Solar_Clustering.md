@@ -1,17 +1,13 @@
 ---
-title: "Solar electricity generation - part 1/3 - clustering countries and regions - "
+title: "Solar electricity generation - part 1/3 - clustering countries and regions"
 date: 2019-11-15
 categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
-  image: "/images/2019-11-15-Solar-generation/banner.jpeg"
+  image: "/images/2019-11-15-Solar-generation/banner.jpg"
 excerpt: "In this 1st part, we're going to make clusters of european countries with similar solar generation capacities."
 mathjax: "true"
----
-
-# Solar energy generation per country - clustering - part 1-3
-
 ---
 
 __Description of the data set__

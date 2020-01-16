@@ -6,7 +6,7 @@ categories:
   - Data Science
 tags: [ENS Data Challenge]
 header:
-  image: "/images/2019-11-15-Electricity-supply-pricing/israel-palacio-ImcUkZ72oUs-unsplash.png"
+  image: "/images/2019-11-15-Electricity-supply-pricing/israel-palacio-ImcUkZ72oUs-unsplash.jpg"
 excerpt: "This is an old challenge by the E.N.S. After an exploratory data analysis to understand how data is structured, i'll use various ML models including deep learning (RNN types)"
 mathjax: "true"
 ---

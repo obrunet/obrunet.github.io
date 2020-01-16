@@ -1,6 +1,6 @@
 ---
 title: "Electricity consumption regression for supply pricing"
-date: 2019-11-15
+date: 2020-01-04
 categories:
   - Data Analysis
   - Data Science

@@ -1,5 +1,5 @@
 ---
-title: "Solar electricity generation - part 1/3 - clustering countries and regions"
+title: "Solar energy generation 1/3 - clustering countries & regions"
 date: 2019-11-15
 categories:
   - Data Science

@@ -188,8 +188,7 @@ def plot_scores():
     sns.barplot(y="model_names", x="value", hue="variable", data=df_score)
     plt.show()
 ```
-
-## Baseline
+## Baseline
 
 This simple model use the mean of 10 years at a certain day at a specific hour. It can be considered as a weak predicator. It is used to see if the other ML models are interesting and efficient or not. Let's see how the predictions of this baseline look like :
 
@@ -549,7 +548,7 @@ plot_predictions(data=y_test)
 
 
 ---
-# Prophet - a facebook lib for time series
+# Prophet - a facebook lib for time series
 
 Let's try something different : a library specific for time series.
 I've decided to use prophet, but one can also give an opportunity to other libs such as ARIMA / SARIMA.

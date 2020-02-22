@@ -15,8 +15,7 @@ In [the previous part](https://obrunet.github.io/data%20science/Solar_EDA/) of t
 
 
 For that, we'll only keep one region 'FR10' corresponding to the Paris Area.
-
-## Data preparation
+## Data preparation
 
 As usual, let's start with some data preparation : first we import the needed libraries, then we import the csv file into a dataframe. After that we can reuse a previous function to add date time informations (year, month, week of the year, the day of the year, and the hour of the day):
 
@@ -160,8 +159,7 @@ test_data = df[-24*31:]
 
 ---
 # Model Training
-
-##Metric : RMSE
+## Metric : RMSE
 
 The root-mean-square error (RMSE) is a frequently used measure of the differences between values (sample or population values) predicted by a model or an estimator and the values observed. The RMSE represents the square root of the second sample moment of the differences between predicted values and observed values or the quadratic mean of these differences. These deviations are called residuals when the calculations are performed over the data sample that was used for estimation and are called errors (or prediction errors) when computed out-of-sample. The RMSE serves to aggregate the magnitudes of the errors in predictions for various times into a single measure of predictive power. RMSE is a measure of accuracy, to compare forecasting errors of different models for a particular dataset and not between datasets, as it is scale-dependent.
 
@@ -788,10 +786,7 @@ df.shape
 ```
 
 
-
-
     (35040, 22)
-
 
 
 ## Data preparation
@@ -821,11 +816,7 @@ X = process_data(df, lookback)
 X.shape, y.shape
 ```
 
-
-
-
     ((34991, 48, 22), (34991,))
-
 
 
 We don't need to scale the values since they are already between 0 and 1. So let's start by building a simple RNN model. Before we need to split the data set in two parts for training and test purposes. We can use the parameter shuffle=False in the scikit learn train_test_split method so that the last 20% will correspond to the end of our hourly records and not randomly choosen lines of the dataframe.
@@ -880,6 +871,8 @@ rnn_model.fit(x=X_train, y=y_train, validation_data=(X_test, y_test), epochs=50,
     27992/27992 [==============================] - 8s 292us/sample - loss: 0.0106 - val_loss: 0.0062
     Epoch 2/50
     27992/27992 [==============================] - 7s 232us/sample - loss: 0.0054 - val_loss: 0.0067
+
+
     Epoch 49/50
     27992/27992 [==============================] - 7s 252us/sample - loss: 0.0026 - val_loss: 0.0037
     Epoch 50/50
@@ -972,6 +965,8 @@ gru_model.fit(x=X_train, y=y_train, validation_data=(X_test, y_test), epochs=50,
     27992/27992 [==============================] - 26s 932us/sample - loss: 0.0067 - val_loss: 0.0042
     Epoch 2/50
     27992/27992 [==============================] - 25s 906us/sample - loss: 0.0040 - val_loss: 0.0039
+
+    
     Epoch 49/50
     27992/27992 [==============================] - 25s 909us/sample - loss: 0.0020 - val_loss: 0.0027
     Epoch 50/50

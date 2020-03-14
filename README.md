@@ -30,11 +30,13 @@ Welcome to my web site, enjoy your stay.
 - insincere questions part 2
 - description of data with stats
 - other posts on scraping (on steroid with Tor, scrapy etc...)
+- tables of content for each post (with references)
 
 
 ## Other links 
 
 Other Kaggle Challenges - CV
+- https://www.kaggle.com/dansbecker/food-101
 - https://www.kaggle.com/c/digit-recognizer
 - https://www.kaggle.com/c/facial-keypoints-detection
 - This person does not exist (with celebrities images from Kaggle)

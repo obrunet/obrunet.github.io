@@ -15,14 +15,24 @@ Welcome to my web site, enjoy your stay.
 
 ## Next blog posts
 
-- Notebooks of the EDA of the scraped Car datasheet
 - TEDx talks
 - Theories of mind
 - Best linux apps
-- books' reviews & resize images, also change the about page with links to reviews
-- reversing with lena + asm summary
-- bash summary
+- Update the about section
 - git basics
+- challs
+
+## To do asap
+- post on 30 wind years
+- chall z.indi audio
+- chall z.indi particles
+- ML in scala
+- insincere questions part 2
+- description of data with stats
+- other posts on scraping (on steroid with Tor, scrapy etc...)
+
+
+## Other links 
 
 Other Kaggle Challenges - CV
 - https://www.kaggle.com/c/digit-recognizer

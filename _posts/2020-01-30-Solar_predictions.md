@@ -11,7 +11,7 @@ mathjax: "true"
 ---
 
 
-In [the previous part](https://obrunet.github.io/data%20science/Solar_EDA/) of this study we've have made an exploratory analysis of the data set. We were able to understand how solar generation is dependant of time. Now in this final step, we're going to training different types of machine learning models in order to make predictions.
+In [the previous part](https://obrunet.github.io/data%20science/Solar_EDA/) of this study we've have made an exploratory analysis of the data set. We were able to understand how solar generation is dependant of time. Now in this final step, we're going to train different types of machine learning models in order to make predictions, including R.N.N (deep learning Recurrent neural networks).
 
 
 For that, we'll only keep one region 'FR10' corresponding to the Paris Area.

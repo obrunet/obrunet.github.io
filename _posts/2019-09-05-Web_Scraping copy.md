@@ -2,7 +2,7 @@
 title: "Web Scraping with Python Cheat Sheet "
 date: 2019-09-05
 categories:
-  - Data Science
+  - Pythonic ideas
 tags: [Web scraping]
 header:
   image: "/images/banners/banner_code.png"

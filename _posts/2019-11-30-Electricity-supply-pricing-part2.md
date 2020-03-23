@@ -3,7 +3,7 @@ title: "Historical consumption regression for electricity supply pricing - part 
 date: 2019-11-30
 categories:
   - Data Science
-tags: [ENS Data Challenge, Data Analysis]
+tags: [ENS Data Challenge]
 header:
   image: "/images/2019-11-15-Electricity-supply-pricing/federico-beccari-ahi73ZN5P0Y-unsplash.jpg"
 excerpt: "This is the 2nd part of a data science challenge organized by the E.N.S, i've used various ML models including deep learning : RNN (espacially GRU)"

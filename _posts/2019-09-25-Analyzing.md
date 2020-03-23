@@ -2,7 +2,7 @@
 title: "Analyzing the Analyzers"
 date: 2019-09-25
 categories:
-  - Data Science
+  - Data Analysis
 tags: [Misc]
 header:
   image: "/images/banners/banner_code.jpg"

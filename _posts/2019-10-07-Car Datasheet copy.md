@@ -2,7 +2,7 @@
 title: "Scraping Car Datasheet (1970-1982)"
 date: 2019-10-07
 categories:
-  - Data Science
+  - Data Analysis
 tags: [Web scraping]
 header:
   image: "/images/banners/banner_code.png"

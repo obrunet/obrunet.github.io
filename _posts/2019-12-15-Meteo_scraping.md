@@ -2,7 +2,7 @@
 title: "Weather data Scraping"
 date: 2019-12-15
 categories:
-  - Data Science
+  - Pythonic ideas
 tags: [Web scraping]
 header:
   image: "/images/banners/banner_code.png"

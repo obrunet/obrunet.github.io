@@ -2,7 +2,7 @@
 title: "Scraping the Pokemon's database"
 date: 2019-10-27
 categories:
-  - Data Science
+  - Pythonic ideas
 tags: [Web scraping]
 header:
   image: "/images/banners/banner_code.png"

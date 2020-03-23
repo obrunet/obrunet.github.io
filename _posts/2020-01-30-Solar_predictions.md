@@ -3,7 +3,7 @@ title: "Solar energy generation 3/3 - efficiency forecast"
 date: 2020-01-30
 categories:
   - Data Science
-tags: [Kaggle Competitions]
+tags: [Kaggle Competitions, Deep Learning]
 header:
   image: "/images/2019-11-15-Solar-generation/banner.jpg"
 excerpt: "In this 3rd part, we train usual M.L and Deep Learning models in order to forecast the solar electricity generation in the Paris area"

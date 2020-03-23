@@ -1,5 +1,5 @@
 ---
-title: "Electricity consumption regression for supply pricing"
+title: "Historical consumption regression for electricity supply pricing - part 1/2"
 date: 2020-01-04
 categories:
   - Data Analysis

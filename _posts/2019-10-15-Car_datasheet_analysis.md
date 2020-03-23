@@ -2,8 +2,8 @@
 title: "Analysis of the Car Datasheet"
 date: 2019-10-15
 categories:
-  - Data Science
-tags: [Web scraping, Data Analysis]
+  - Data Analysis
+tags: [Web scraping]
 header:
   image: "/images/banners/banner_code.png"
 excerpt: "Making Scraped Data Usable"

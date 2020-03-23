@@ -1,5 +1,5 @@
 ---
-title: "Kaggle Challenge: Home Credit Default Risk"
+title: "Home Credit Default Risk Prediction"
 date: 2019-07-19
 categories:
   - Data Science

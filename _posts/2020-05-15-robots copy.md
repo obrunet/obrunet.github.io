@@ -12,4 +12,4 @@ mathjax: "true"
 
 An other really interesting video from Kurzgesagt :)
 
-<iframe width="1271" height="715" src="https://www.youtube.com/embed/DHyUYg8X31c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="792" height="450" src="https://www.youtube.com/embed/DHyUYg8X31c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

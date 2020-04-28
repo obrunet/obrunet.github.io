@@ -2,8 +2,8 @@
 title: "Is Reality Real? The Simulation Argument"
 date: 2019-06-11
 categories:
-  - Neuroscience
-tags: [Neuroscience]
+  - Neuroscience / Memory
+tags: [Neuroscience / Memory]
 header:
   image: "/images/banners/banner_neuro.png"
 excerpt: "How to be sure that we aren't living in a simulation?"

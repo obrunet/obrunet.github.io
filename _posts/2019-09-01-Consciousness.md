@@ -2,8 +2,8 @@
 title: "The Origin of Consciousness"
 date: 2019-09-01
 categories:
-  - Neuroscience
-tags: [Neuroscience]
+  - Neuroscience / Memory
+tags: [Neuroscience / Memory]
 header:
   image: "/images/banners/banner_neuro.png"
 excerpt: "How Unaware Things Became Aware"

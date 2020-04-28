@@ -13,6 +13,14 @@ Welcome to my web site, enjoy your stay.
 * [Jekyll](https://jekyllrb.com/)
 * [Ruby gems](https://rubygems.org/gems/minimal-mistakes-jekyll)
 
+## Blog posts already done but not published (will be made soon)
+
+- Wind generation
+- Cirta particle
+- Audio deep learning
+- Data engineering
+- Scraping AI generated faces
+
 ## Next blog posts
 
 - TEDx talks

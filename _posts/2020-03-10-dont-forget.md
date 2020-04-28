@@ -5,12 +5,12 @@ categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]
 header:
-  image: "/images/banners/banner_city.jpeg"
+  image: "/images/banners/banner_neuro.png"
 excerpt: "Learning a memorization technique used by elite memory athletes leads to widespread changes in brain wiring"
 mathjax: "true"
 ---
 
-Credits:  [Catherine Caruso](https://www.scientificamerican.com/article/dont-forget-you-too-can-acquire-a-super-memory/) (article) & [Robert Bock](https://unsplash.com/@robertbock) (header image).
+Credits:  [Catherine Caruso](https://www.scientificamerican.com/article/dont-forget-you-too-can-acquire-a-super-memory/).
 
 Elite memory athletes are not so different from their peers in any other sport: They face off in intense competitions where they execute seemingly superhuman feats such as memorizing a string of 500 digits in five minutes. Most memory athletes credit their success to hours of memorization-technique practice. One lingering question, though, is whether memory champs succeed by practice alone or are somehow gifted. Recent research suggests there may be hope for the rest of us. A study published in Neuron provides solid evidence that most people can successfully learn and apply the memorization techniques used by memory champions while triggering large-scale brain changes in the process.
 

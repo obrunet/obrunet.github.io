@@ -19,6 +19,8 @@ Welcome to my web site, enjoy your stay.
 - Cirta particle
 - Audio deep learning
 - Data engineering
+- Hierachical clustering
+- DBSCAN
 - Scraping AI generated faces
 
 ## Next blog posts

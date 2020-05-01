@@ -5,7 +5,7 @@ categories:
   - Data Science
 tags: [Zindi Competitions]
 header:
-    image: "/images/2020-02-15-Particles/banner.jpg"
+    image: "/images/2020-02-15-Particles/banner.png"
 excerpt: "Build a machine learning model to help physicists identify particles in images"
 mathjax: "true"
 ---
@@ -16,7 +16,9 @@ __Build a machine learning model to help physicists identify particles in images
 
 ---
 
-# Short Introduction 
+# Short Introduction
+
+__If you're in a hurry...__
 
 Proposed by [Zindi](https://zindi.africa/competitions/tic-heap-cirta-particle-classification-challenge)
 
@@ -68,10 +70,10 @@ This is the multiclass classification computer vision problem to identify partic
 - 321: "kaon"
 - 2212: "proton"
 
-![title](./fig1.png)
+![title](/images/2020-02-15-Particles/fig1.png)
 Fig 1 Transverse plane of the TrackML detector with the particle in red
 
-![title](./fig2.png)
+![title](/images/2020-02-15-Particles/fig2.png)
 Fig 2 Translated particle with RZ binning
 
 __Files available :__
@@ -203,7 +205,7 @@ plt.show()
 ```
 
 
-![png](output_12_0.png)
+![png](/images/2020-02-15-Particles/output_12_0.png)
 
 
 
@@ -222,23 +224,23 @@ for j in [11, 13, 211, 321, 2212]:
 ```
 
 
-![png](output_13_0.png)
+![png](/images/2020-02-15-Particles/output_13_0.png)
 
 
 
-![png](output_13_1.png)
+![png](/images/2020-02-15-Particles/output_13_1.png)
 
 
 
-![png](output_13_2.png)
+![png](/images/2020-02-15-Particles/output_13_2.png)
 
 
 
-![png](output_13_3.png)
+![png](/images/2020-02-15-Particles/output_13_3.png)
 
 
 
-![png](output_13_4.png)
+![png](/images/2020-02-15-Particles/output_13_4.png)
 
 
 ---
@@ -482,7 +484,7 @@ display_scores()
     
 
 
-![png](output_26_1.png)
+![png](/images/2020-02-15-Particles/output_26_1.png)
 
 
 ---
@@ -637,7 +639,7 @@ display_scores()
     
 
 
-![png](output_35_1.png)
+![png](/images/2020-02-15-Particles/output_35_1.png)
 
 
 ---
@@ -739,7 +741,7 @@ display_confusion_matx('./1_original_data_AdaBoostClassifier')
 ```
 
 
-![png](output_0_0.png)
+![png](/images/2020-02-15-Particles/output_0_0.png)
 
 
 
@@ -748,7 +750,7 @@ display_confusion_matx('1_original_data_LGBMClassifier')
 ```
 
 
-![png](output_1_0.png)
+![png](/images/2020-02-15-Particles/output_1_0.png)
 
 
 
@@ -757,7 +759,7 @@ display_confusion_matx('1_original_data_RidgeClassifier')
 ```
 
 
-![png](output_2_0.png)
+![png](/images/2020-02-15-Particles/output_2_0.png)
 
 
 ---
@@ -862,7 +864,7 @@ display_confusion_matx('./2_smote_AdaBoostClassifier')
 ```
 
 
-![png](output_11_0.png)
+![png](/images/2020-02-15-Particles/output_11_0.png)
 
 
 
@@ -871,7 +873,7 @@ display_confusion_matx('./2_smote_LGBMClassifier')
 ```
 
 
-![png](output_12_0_3.png)
+![png](/images/2020-02-15-Particles/output_12_0_3.png)
 
 
 
@@ -880,7 +882,7 @@ display_confusion_matx('./2_smote_RidgeClassifier')
 ```
 
 
-![png](output_13_0_3.png)
+![png](/images/2020-02-15-Particles/output_13_0_3.png)
 
 
 ## Randomforest with weighted classes
@@ -896,7 +898,7 @@ plot_confusion_mtx(rf)
 ```
 
 
-![png](output_15_0.png)
+![png](/images/2020-02-15-Particles/output_15_0.png)
 
 
 
@@ -912,7 +914,7 @@ plot_confusion_mtx(logreg)
 ```
 
 
-![png](output_17_0.png)
+![png](/images/2020-02-15-Particles/output_17_0.png)
 
 
 
@@ -980,7 +982,7 @@ display_confusion_matx('./3_adasyn_AdaBoostClassifier')
 ```
 
 
-![png](output_24_0.png)
+![png](/images/2020-02-15-Particles/output_24_0.png)
 
 
 
@@ -989,7 +991,7 @@ display_confusion_matx('./3_adasyn_LGBMClassifier')
 ```
 
 
-![png](output_25_0.png)
+![png](/images/2020-02-15-Particles/output_25_0.png)
 
 
 
@@ -998,7 +1000,7 @@ display_confusion_matx('./3_adasyn_RidgeClassifier')
 ```
 
 
-![png](output_26_0.png)
+![png](/images/2020-02-15-Particles/output_26_0.png)
 
 
 # Tensorflow
@@ -1428,7 +1430,7 @@ plot_confusion_mtx(model)
 ```
 
 
-![png](output_29_0.png)
+![png](/images/2020-02-15-Particles/output_29_0.png)
 
 # tensorflow with other param
 
@@ -1522,5 +1524,5 @@ plt.show()
 ```
 
 
-![png](output_4_0.png)
+![png](/images/2020-02-15-Particles/output_4_0.png)
 

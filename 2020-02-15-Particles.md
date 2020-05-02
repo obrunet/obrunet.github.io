@@ -1,16 +1,18 @@
 ---
-title: "Cirta - Particle Type Classification - Part 1/2"
+title: "Cirta - Particle Type Classification"
 date: 2020-02-15
 categories:
   - Data Science
 tags: [Zindi Competitions]
 header:
     image: "/images/2020-02-15-Particles/banner.png"
-excerpt: "Build a machine learning model to help physicists identify particles in images - intro, EDA, 1st models & submissions"
+excerpt: "Build a machine learning model to help physicists identify particles in images"
 mathjax: "true"
 ---
 
 Banner made from a photo by [Moritz Kindler](https://unsplash.com/@moritz_photography) on Unsplash
+
+This is the second and final part of this challenge. In the first part we've prepared the data set and explored it. The goal is to build a machine learning model to help physicists identify particles in images.
 
 ---
 
@@ -69,11 +71,9 @@ This is the multiclass classification computer vision problem to identify partic
 - 2212: "proton"
 
 ![title](/images/2020-02-15-Particles/fig1.png)
-
 Fig 1 Transverse plane of the TrackML detector with the particle in red
 
 ![title](/images/2020-02-15-Particles/fig2.png)
-
 Fig 2 Translated particle with RZ binning
 
 __Files available :__
@@ -108,14 +108,12 @@ import warnings
 warnings.filterwarnings('ignore')
 ```
 
-This dictionnary will be usefull later when we'll need to have the meaning of each class and to know what it corresponds to.
 
 ```python
 # code to particle name dictionary : 
 dic_types = {11: "electron", 13: "muon", 211: "pion", 321: "kaon", 2212: "proton"}
 ```
 
-Let's load only one of the binary file of the data set and see the shape :
 
 ```python
 # load a pickle file
@@ -124,15 +122,28 @@ event = pickle.load(open('../../Desktop/particle_train_data/event1.pkl', 'rb'))
 # get the data and target
 data, target = event[0], event[1]
 target = target.astype('int')
+```
+
+
+```python
 event.shape, data.shape, target.shape, data[0].shape, target[0].shape
 ```
 
-((2, 3598), (3598,), (3598,), (10, 10), ())
+
+
+
+    ((2, 3598), (3598,), (3598,), (10, 10), ())
+
+
 
 
 ```python
 data[3597]
 ```
+
+
+
+
     array([[2., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
            [0., 3., 0., 0., 0., 0., 0., 0., 0., 0.],
            [0., 0., 2., 0., 0., 0., 0., 0., 0., 0.],
@@ -144,27 +155,46 @@ data[3597]
            [0., 0., 0., 0., 0., 0., 0., 0., 1., 0.],
            [0., 0., 0., 0., 0., 0., 0., 0., 0., 1.]])
 
+
+
+
 ```python
 target[3597]
 ```
-2212
+
+
+
+
+    2212
+
+
+
 
 ```python
 target.dtype, data.dtype
 ```
 
-(dtype('int32'), dtype('O'))
+
+
+
+    (dtype('int32'), dtype('O'))
+
+
+
 
 ```python
 target[0].dtype, data[0].dtype
 ```
 
-(dtype('int32'), dtype('float64'))
 
 
-__Distribution of particles in an event__
 
-We can immediately see that the target in highly imbalanced and multiclass :
+    (dtype('int32'), dtype('float64'))
+
+
+
+Distribution of particles in an event
+
 
 ```python
 from collections import Counter
@@ -174,11 +204,13 @@ plt.xticks(range(len(dic_types)), [dic_types[i] for i in list(Counter(target).ke
 plt.show()
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_12_0.png)
 
-Displays 10 randomly choosen images for each collision, in order to see if there is a common pattern in each class (which is not obvious at first sight)
+
 
 ```python
+# display 10 randomly choosen images for each collision
 for j in [11, 13, 211, 321, 2212]:
     plt.figure(figsize=(12, 10))
     data_tmp = data[np.where(target==j)]
@@ -212,9 +244,9 @@ for j in [11, 13, 211, 321, 2212]:
 
 
 ---
-# Data Preparation
+# Load all the data & preparation
 
-At first, let's load all the data, then we have to check if all the chunks have the same shape. The second step consists in transforming all pickles files into two numpy arrays (data & target)
+Transform all pickles files into two numpy arrays (data & target)
 
 
 ```python
@@ -283,26 +315,42 @@ data.shape, target.shape, "//", data[0].shape, target[0].shape, "//", \
 data[data.shape[0]-1].shape, target[target.shape[0]-1].shape
 ```
 
-((1259300, 100), (1259300, 1), '//', (100,), (1,), '//', (100,), (1,))
+
+
+
+    ((1259300, 100), (1259300, 1), '//', (100,), (1,), '//', (100,), (1,))
+
+
 
 
 ```python
 data[:1]
 ```
 
-	array([[3., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 3., 0., 0., 0., 0.,
-	        0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-	        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0.,
-	        0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0.,
-	        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0.,
-	        0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0.,
-	        0., 0., 0., 1.]])
+
+
+
+    array([[3., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 3., 0., 0., 0., 0.,
+            0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+            0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0.,
+            0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0., 0.,
+            0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0.,
+            0., 0., 0., 0., 0., 0., 0., 0., 1., 0., 0., 0., 0., 0., 0., 0.,
+            0., 0., 0., 1.]])
+
+
+
 
 ```python
 target[:1]
 ```
 
-	array([[211]], dtype=int64)
+
+
+
+    array([[211]], dtype=int64)
+
+
 
 
 ```python
@@ -310,24 +358,26 @@ freq = np.unique(target, return_counts=True)
 freq
 ```
 
-	(array([  11,   13,  211,  321, 2212], dtype=int64),
-	 array([  3150,    700, 981050, 160300, 114100], dtype=int64))
 
-Let's compute the ratio of the least represented class :
+
+
+    (array([  11,   13,  211,  321, 2212], dtype=int64),
+     array([  3150,    700, 981050, 160300, 114100], dtype=int64))
+
+
+
 
 ```python
 print('ratio:', np.unique(target, return_counts=True)[1][1] / np.unique(target, return_counts=True)[1][3] * 100, '%')
 ```
 
- ratio: 0.43668122270742354 %
+    ratio: 0.43668122270742354 %
     
+
 ---
 # Basic Machine Learning Models & Predictions
 
-Now let's use the most common and simple machine learning models in order to get a base line. As always, we need to preprocess and split our data set into a training & test parts. 
-
-__Side note__ : it is important here to use the stratify parameter so that the proportion of values in the sample produced in our test group will be the same as the proportion of values provided to parameter stratify. This results especially useful when working around classification problems, since if we don’t provide this parameter with an array-like object, we may end with a non-representative distribution of our target classes in our test group.
-Furthermore, there is a class with very few records, without the stratify parameter we may have a training or a test data set without muon !
+why stratify is important ?????????????????????????????
 
 
 ```python
@@ -338,7 +388,17 @@ X_train, X_test, y_train, y_test = train_test_split(data, target, test_size=0.20
 X_train.shape, X_test.shape, y_train.shape, y_test.shape
 ```
 
-((1007440, 100), (251860, 100), (1007440, 1), (251860, 1))
+
+
+
+    ((1007440, 100), (251860, 100), (1007440, 1), (251860, 1))
+
+
+
+Models à éviter : 
+- KNeighborsClassifier
+- SVC(gamma='auto')
+- xgboost
 
 
 ```python
@@ -354,10 +414,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC, LinearSVC
 
 import lightgbm as lgbm
+```
 
+
+```python
 model_list = [RandomForestClassifier(), DecisionTreeClassifier(), ExtraTreeClassifier(), RidgeClassifier(), 
-             AdaBoostClassifier(), lgbm.LGBMClassifier(n_jobs = -1)]
-
+             AdaBoostClassifier(), lgbm.LGBMClassifier(n_jobs = -1)
+             ]
 model_names = []
 train_score, test_score, f1_train, f1_test = [], [], [], []
 
@@ -423,32 +486,38 @@ display_scores()
 
 ![png](/images/2020-02-15-Particles/output_26_1.png)
 
-Those models aren't effective enough, because they fail to classify correctly the least represented classes...(see the confusion matrix below). To solve this we need to rebalance the target.
 
 ---
 # Using the Synthetic Minority Over-sampling Technique
 
-__How SMOTe works, Brief description of the Synthetic Minority Over-sampling Technique:__
+How SMOTe works
+Brief description on SMOTe (Synthetic Minority Over-sampling Technique):
 
-It creates synthetic observations of the minority class (bad loans) by:
+it creates synthetic observations of the minority class (bad loans) by:
 
 Finding the k-nearest-neighbors for minority class observations (finding similar observations)
 Randomly choosing one of the k-nearest-neighbors and using it to create a similar, but randomly tweaked, new observation.
 More explanations can be found here
 
-
+An other informative article
 
 Oversampling is a well-known way to potentially improve models trained on imbalanced data. But it’s important to remember that oversampling incorrectly can lead to thinking a model will generalize better than it actually does. Random forests are great because the model architecture reduces overfitting (see Brieman 2001 for a proof), but poor sampling practices can still lead to false conclusions about the quality of a model.
 
 When the model is in production, it’s predicting on unseen data. The main point of model validation is to estimate how the model will generalize to new data. If the decision to put a model into production is based on how it performs on a validation set, it’s critical that oversampling is done correctly.
 
 
+
 ```python
 np.unique(y_train, return_counts=True)
 ```
 
+
+
+
     (array([  11,   13,  211,  321, 2212], dtype=int64),
      array([  2516,    553, 784766, 128270,  91335], dtype=int64))
+
+
 
 
 ```python
@@ -465,10 +534,11 @@ def percent_electron_muon():
 percent_electron_muon()
 ```
 
-total nb of particules : 1007440
-percentage of electrons : 0.25%
-percentage of muons : 0.05%
+    total nb of particules : 1007440
+    percentage of electrons : 0.25%
+    percentage of muons : 0.05%
     
+
 
 ```python
 # dic_types = {11: "electron", 13: "muon", 211: "pion", 321: "kaon", 2212: "proton"}
@@ -478,7 +548,12 @@ nb_muon_goal = int(round(total*0.8/100))
 nb_elec_goal, nb_muon_goal
 ```
 
-(15112, 8060)
+
+
+
+    (15112, 8060)
+
+
 
 
 ```python
@@ -486,7 +561,17 @@ X_train, y_train = pd.DataFrame(X_train), pd.DataFrame(y_train)
 X_train.shape, y_train.shape
 ```
 
-((1007440, 100), (1007440, 1))
+
+
+
+    ((1007440, 100), (1007440, 1))
+
+
+
+References :
+- https://www.kaggle.com/obrunet/credit-card-fraud-detection
+- https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets#t72
+- https://www.kaggle.com/gargmanish/how-to-handle-imbalance-data-study-in-detail
 
 
 ```python
@@ -500,15 +585,25 @@ X_train, y_train = sm.fit_resample(X_train, y_train)
 X_train.shape, y_train.shape
 ```
 
-((1027543, 100), (1027543,))
+
+
+
+    ((1027543, 100), (1027543,))
+
+
 
 
 ```python
 np.unique(y_train, return_counts=True)
 ```
 
-(array([  11,   13,  211,  321, 2212], dtype=int64),
- array([ 15112,   8060, 784766, 128270,  91335], dtype=int64))
+
+
+
+    (array([  11,   13,  211,  321, 2212], dtype=int64),
+     array([ 15112,   8060, 784766, 128270,  91335], dtype=int64))
+
+
 
 
 ```python
@@ -516,42 +611,41 @@ train_all_models("2_smote_")
 display_scores()
 ```
 
-                               model_names     variable     value
-0   1_original_data_RandomForestClassifier  train_score  0.902241
-1   1_original_data_DecisionTreeClassifier  train_score  0.902326
-2      1_original_data_ExtraTreeClassifier  train_score  0.902326
-3          1_original_data_RidgeClassifier  train_score  0.783943
-4       1_original_data_AdaBoostClassifier  train_score  0.577456
-5           1_original_data_LGBMClassifier  train_score  0.828249
-6           2_smote_RandomForestClassifier  train_score  0.900341
-7           2_smote_DecisionTreeClassifier  train_score  0.900457
-8              2_smote_ExtraTreeClassifier  train_score  0.900457
-9                  2_smote_RidgeClassifier  train_score  0.770294
-10              2_smote_AdaBoostClassifier  train_score  0.646488
-11                  2_smote_LGBMClassifier  train_score  0.832237
-12  1_original_data_RandomForestClassifier   test_score  0.900484
-13  1_original_data_DecisionTreeClassifier   test_score  0.900147
-14     1_original_data_ExtraTreeClassifier   test_score  0.900147
-15         1_original_data_RidgeClassifier   test_score  0.784460
-16      1_original_data_AdaBoostClassifier   test_score  0.577892
-17          1_original_data_LGBMClassifier   test_score  0.828194
-18          2_smote_RandomForestClassifier   test_score  0.899575
-19          2_smote_DecisionTreeClassifier   test_score  0.899103
-20             2_smote_ExtraTreeClassifier   test_score  0.899103
-21                 2_smote_RidgeClassifier   test_score  0.784722
-22              2_smote_AdaBoostClassifier   test_score  0.658695
-23                  2_smote_LGBMClassifier   test_score  0.831402
+                                   model_names     variable     value
+    0   1_original_data_RandomForestClassifier  train_score  0.902241
+    1   1_original_data_DecisionTreeClassifier  train_score  0.902326
+    2      1_original_data_ExtraTreeClassifier  train_score  0.902326
+    3          1_original_data_RidgeClassifier  train_score  0.783943
+    4       1_original_data_AdaBoostClassifier  train_score  0.577456
+    5           1_original_data_LGBMClassifier  train_score  0.828249
+    6           2_smote_RandomForestClassifier  train_score  0.900341
+    7           2_smote_DecisionTreeClassifier  train_score  0.900457
+    8              2_smote_ExtraTreeClassifier  train_score  0.900457
+    9                  2_smote_RidgeClassifier  train_score  0.770294
+    10              2_smote_AdaBoostClassifier  train_score  0.646488
+    11                  2_smote_LGBMClassifier  train_score  0.832237
+    12  1_original_data_RandomForestClassifier   test_score  0.900484
+    13  1_original_data_DecisionTreeClassifier   test_score  0.900147
+    14     1_original_data_ExtraTreeClassifier   test_score  0.900147
+    15         1_original_data_RidgeClassifier   test_score  0.784460
+    16      1_original_data_AdaBoostClassifier   test_score  0.577892
+    17          1_original_data_LGBMClassifier   test_score  0.828194
+    18          2_smote_RandomForestClassifier   test_score  0.899575
+    19          2_smote_DecisionTreeClassifier   test_score  0.899103
+    20             2_smote_ExtraTreeClassifier   test_score  0.899103
+    21                 2_smote_RidgeClassifier   test_score  0.784722
+    22              2_smote_AdaBoostClassifier   test_score  0.658695
+    23                  2_smote_LGBMClassifier   test_score  0.831402
     
+
 
 ![png](/images/2020-02-15-Particles/output_35_1.png)
 
-As you can see the oversampling technique doesn't improve the result significantly. This is in fact due to the fact that i should have try different ratio. An other reason could be that those models don't suit our needs for this particular problem... In this second part of the article (in an other blog post, you'll see that SMOTe can indeed improve the classification results)
 
 ---
 
 # First submissions
 
-I wasn't able to reproduce the same metric used for this competition. And in order to see the rank of this solution, let's submit this first results : 
 
 ```python
 def train_single_model(model):
@@ -560,8 +654,10 @@ def train_single_model(model):
     print("score train", model.score(X_train, y_train))
     print("score test", model.score(X_test, y_test))
     return model
+```
 
 
+```python
 def make_submission(trained_model, csv_name):
     """Load the test pickle file, make prediction with the trained model & create a csv for submission"""
     pkl_file = open('other_data/data_test_file.pkl', 'rb')
@@ -572,38 +668,52 @@ def make_submission(trained_model, csv_name):
       ss[trained_model.classes_[i]] = test_preds[:,i]
     ss.head()
     ss.to_csv(csv_name + '.csv', index=False)
+```
 
 
+```python
 rf = train_single_model(RandomForestClassifier(n_estimators=200, max_depth=5))
 make_submission(rf, "submission_rf")
 ```
 
-submission score = 2.95 // rank : 17th not that bad
+submission score = 2.95 // rank : 17th
+
+---
+
+
 
 ```python
 ab_clf = train_single_model(AdaBoostClassifier(n_estimators=200))
 ```
 
-score train 0.6194992129382441
-score test 0.6183531043437205
+    score train 0.6194992129382441
+    score test 0.6183531043437205
+    
+
 
 ```python
 # How well does it do?
 confusion_matrix(y_test, ab_clf.predict(X_test))
 ```
 
-	array([[  2160,      0,  15320,      0,   2141],
-	       [     0,      0,    392,      0,      0],
-	       [ 30720,     74, 165417,      0,      0],
-	       [  4295,      0,  27765,      0,      0],
-	       [  3253,      0,  19506,      0,     61]], dtype=int64)
+
+
+
+    array([[  2160,      0,  15320,      0,   2141],
+           [     0,      0,    392,      0,      0],
+           [ 30720,     74, 165417,      0,      0],
+           [  4295,      0,  27765,      0,      0],
+           [  3253,      0,  19506,      0,     61]], dtype=int64)
+
+
+
 
 ```python
 ad_final = AdaBoostClassifier(n_estimators=200).fit(X, y)
 make_submission(ad_final, "submission_ab_final")
 ```
 
-submission score : 3.87, this is worse than the 1st attempt...
+submission score : 3.87
 
 
 ```python
@@ -611,10 +721,13 @@ rf_whole_dataset = train_single_model(RandomForestClassifier(n_estimators=200, m
 make_submission(rf_whole_dataset, "submission_rf_whole_dataset")
 ```
 
-score train 0.7403913453638051
-score test 0.7402435965533523
+    score train 0.7403913453638051
+    score test 0.7402435965533523
     
-submission score :2.27, this is the best score so far...
+
+submission score :2.27
+
+
 
 ```python
 def display_confusion_matx(best_model_path):
@@ -627,24 +740,31 @@ def display_confusion_matx(best_model_path):
 display_confusion_matx('./1_original_data_AdaBoostClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_0_0.png)
+
 
 
 ```python
 display_confusion_matx('1_original_data_LGBMClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_1_0.png)
+
 
 
 ```python
 display_confusion_matx('1_original_data_RidgeClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_2_0.png)
+
 
 ---
 # Using the Synthetic Minority Over-sampling Technique
+
 
 
 ```python
@@ -653,7 +773,12 @@ class_weight = {k: d for k, d in zip(freq_array[0], freq_array[1])}
 class_weight
 ```
 
-{11: 3150, 13: 700, 211: 981050, 321: 160300, 2212: 114100}
+
+
+
+    {11: 3150, 13: 700, 211: 981050, 321: 160300, 2212: 114100}
+
+
 
 
 ```python
@@ -661,7 +786,12 @@ tot = sum([class_weight[k] for k in class_weight])
 tot
 ```
 
-1259300
+
+
+
+    1259300
+
+
 
 
 ```python
@@ -669,7 +799,12 @@ percentages = {k: round(class_weight[k] / tot * 100, 2) for k in class_weight}
 percentages
 ```
 
-{11: 0.25, 13: 0.06, 211: 77.9, 321: 12.73, 2212: 9.06}
+
+
+
+    {11: 0.25, 13: 0.06, 211: 77.9, 321: 12.73, 2212: 9.06}
+
+
 
 
 ```python
@@ -677,7 +812,12 @@ sampling_strategy = {11: int(round(tot / 100)), 13: int(round(tot / 200))}
 sampling_strategy                                                    
 ```
 
-{11: 12593, 13: 6296}
+
+
+
+    {11: 12593, 13: 6296}
+
+
 
 
 ```python
@@ -693,42 +833,60 @@ pd.DataFrame(y_train_smote).to_csv('../../Desktop/particle_train_data/y_train_sm
 X_train_smote.shape, y_train_smote.shape
 ```
 
-((1023249, 100), (1023249,))
+
+
+
+    ((1023249, 100), (1023249,))
+
+
 
 
 ```python
 np.unique(y_train_smote, return_counts=True)
 ```
 
-(array([  11,   13,  211,  321, 2212], dtype=int64),
- array([ 12593,   6296, 784840, 128240,  91280], dtype=int64))
+
+
+
+    (array([  11,   13,  211,  321, 2212], dtype=int64),
+     array([ 12593,   6296, 784840, 128240,  91280], dtype=int64))
+
+
 
 
 ```python
 train_all_models("2_smote_")
+```
+
+
+```python
 display_confusion_matx('./2_smote_AdaBoostClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_11_0.png)
+
 
 
 ```python
 display_confusion_matx('./2_smote_LGBMClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_12_0_3.png)
+
 
 
 ```python
 display_confusion_matx('./2_smote_RidgeClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_13_0_3.png)
 
 
 ## Randomforest with weighted classes
 
-Let's see if our results get better with a weight for each class ! 
 
 ```python
 freq_array = np.unique(y, return_counts=True)
@@ -739,18 +897,25 @@ rf = RandomForestClassifier(n_estimators=200, max_depth=5, n_jobs=1, class_weigh
 plot_confusion_mtx(rf)
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_15_0.png)
+
 
 
 ```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
+```
 
+
+```python
 logreg = LogisticRegression(n_jobs = -1).fit(X_train, y_train)
 plot_confusion_mtx(logreg)
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_17_0.png)
+
 
 
 ```python
@@ -758,17 +923,22 @@ plot_confusion_mtx(logreg)
 #plot_confusion_mtx(linsvc)
 ```
 
+
 ```python
 np.unique(y_test, return_counts=True)
 ```
 
-(array([  11,   13,  211,  321, 2212], dtype=int64),
- array([   630,    140, 196210,  32060,  22820], dtype=int64))
+
+
+
+    (array([  11,   13,  211,  321, 2212], dtype=int64),
+     array([   630,    140, 196210,  32060,  22820], dtype=int64))
+
 
 
 ---
 
-# Using the Adasyn model
+# Using Adasyn
 
 
 ```python
@@ -781,37 +951,578 @@ pd.DataFrame(y_train_adasyn).to_csv('../../Desktop/particle_train_data/y_train_a
 X_train_adasyn.shape, y_train_adasyn.shape
 ```
 
-	((1023249, 100), (1023249,))
+
+
+
+    ((1023249, 100), (1023249,))
+
+
 
 
 ```python
 np.unique(y_train_adasyn, return_counts=True)
 ```
 
-	(array([  11,   13,  211,  321, 2212], dtype=int64),
-	 array([ 12593,   6296, 784840, 128240,  91280], dtype=int64))
+
+
+
+    (array([  11,   13,  211,  321, 2212], dtype=int64),
+     array([ 12593,   6296, 784840, 128240,  91280], dtype=int64))
+
+
 
 
 ```python
 train_all_models("3_adasyn_")
+```
+
+
+```python
 display_confusion_matx('./3_adasyn_AdaBoostClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_24_0.png)
+
 
 
 ```python
 display_confusion_matx('./3_adasyn_LGBMClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_25_0.png)
+
 
 
 ```python
 display_confusion_matx('./3_adasyn_RidgeClassifier')
 ```
 
+
 ![png](/images/2020-02-15-Particles/output_26_0.png)
 
-# Partial conclusion
-This is the end of the first part. After the preparation of our dataset, the different pictures recorded after a collision have been shown in order to see the new created particles. Here were used some of the most common and simple machine learning models as a base line. Even afer oversampling our data with the SMOTe technique, our results weren't improved : the classifiers don't recognize the least represented classes very well. To be honnest, this is a little bit disappointing, but in [the second part](https://obrunet.github.io/data%20science/Particles2/), i'll challenge a deep learning model with Tensorflow !
+
+# Tensorflow
+
+```python
+np.unique(y, return_counts=True)
+```
+
+
+
+
+    (array([  11,   13,  211,  321, 2212]),
+     array([  3150,    700, 981050, 160300, 114100]))
+
+
+
+
+```python
+# code to particle name dictionary : 
+dic_types = {11: "electron", 13: "muon", 211: "pion", 321: "kaon", 2212: "proton"}
+dic_tf = {11: 0, 13: 1, 211: 2, 321: 3, 2212: 4}
+y = np.array(pd.DataFrame(y).replace(dic_tf))
+np.unique(y, return_counts=True)
+```
+
+
+
+
+    (array([0, 1, 2, 3, 4]), array([  3150,    700, 981050, 160300, 114100]))
+
+
+
+---
+# Data Prep
+
+
+```python
+from sklearn.model_selection import train_test_split
+
+# preprocess dataset, split into training and test part
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=42, stratify=y)
+X_train.shape, X_test.shape, y_train.shape, y_test.shape
+```
+
+
+
+
+    ((1007440, 100), (251860, 100), (1007440, 1), (251860, 1))
+
+
+
+
+```python
+nb_classes = len(np.unique(y))
+nb_classes
+```
+
+
+
+
+    5
+
+
+
+
+```python
+from tensorflow.keras.utils import to_categorical
+
+y_train_cat = to_categorical(y_train, num_classes=nb_classes, dtype='int32')
+y_test_cat = to_categorical(y_test, num_classes=nb_classes, dtype='int32')
+y_train_cat.shape, y_test_cat.shape
+```
+
+
+
+
+    ((1007440, 5), (251860, 5))
+
+
+
+
+```python
+y_train_cat
+```
+
+
+
+
+    array([[0, 0, 1, 0, 0],
+           [0, 0, 1, 0, 0],
+           [0, 0, 1, 0, 0],
+           ...,
+           [0, 0, 1, 0, 0],
+           [0, 0, 0, 0, 1],
+           [0, 0, 1, 0, 0]], dtype=int32)
+
+
+
+
+```python
+X.max(), X.min()
+```
+
+
+
+
+    (8.0, 0.0)
+
+
+
+
+```python
+#from sklearn.preprocessing import StandardScaler
+
+#scaler = StandardScaler()
+#X_train = scaler.fit_transform(X_train)
+#X_test = scaler.transform(X_test)
+
+X_train, X_test = X_train / 8, X_test / 8
+```
+
+
+```python
+np.unique(y_train, return_counts=True)
+```
+
+
+
+
+    (array([0, 1, 2, 3, 4]), array([  2520,    560, 784840, 128240,  91280]))
+
+
+
+
+```python
+np.unique(y_test, return_counts=True)
+```
+
+
+
+
+    (array([0, 1, 2, 3, 4]), array([   630,    140, 196210,  32060,  22820]))
+
+
+
+# Base line
+
+
+```python
+freq_array = np.unique(y, return_counts=True)
+class_weight = {k: d for k, d in zip(freq_array[0], freq_array[1])}
+class_weight
+```
+
+
+
+
+    {0: 3150, 1: 700, 2: 981050, 3: 160300, 4: 114100}
+
+
+
+
+```python
+from sklearn.utils import class_weight
+
+class_weights = class_weight.compute_class_weight('balanced', np.unique(y), y.flatten())
+class_weights
+```
+
+
+
+
+    array([7.99555556e+01, 3.59800000e+02, 2.56724938e-01, 1.57117904e+00,
+           2.20736196e+00])
+
+
+
+
+```python
+initial_bias = np.log([700/981050])
+initial_bias
+```
+
+
+
+
+    array([-7.24529837])
+
+
+
+
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+
+
+input_dim = X_train.shape[1]
+
+model = Sequential()
+model.add(Dense(20, input_dim=input_dim, activation='relu'))#, use_bias = True, bias_initializer='zeros'))
+model.add(Dense(10, activation='relu'))
+model.add(Dense(nb_classes, activation='softmax'))
+
+
+model.compile(loss='sparse_categorical_crossentropy',
+              optimizer='SGD', # nadam
+              metrics=['accuracy'])
+```
+
+
+```python
+model.summary()
+```
+
+    _________________________________________________________________
+    Layer (type)                 Output Shape              Param #   
+    =================================================================
+    dense_15 (Dense)             (None, 20)                2020      
+    _________________________________________________________________
+    dense_16 (Dense)             (None, 10)                210       
+    _________________________________________________________________
+    dense_17 (Dense)             (None, 5)                 55        
+    =================================================================
+    Total params: 2,285
+    Trainable params: 2,285
+    Non-trainable params: 0
+    _________________________________________________________________
+    
+
+
+```python
+#model.get_weights()
+```
+
+
+```python
+y_train_cat.shape
+```
+
+
+
+
+    (1007440, 5)
+
+
+
+
+```python
+model.fit(X_train, y_train,
+          class_weight=class_weight,
+          epochs=8, 
+          batch_size=1000, 
+          validation_data=(X_test, y_test))
+```
+
+    Train on 1007440 samples, validate on 251860 samples
+    Epoch 1/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6918 - acc: 0.7790 - val_loss: 0.6917 - val_acc: 0.7790
+    Epoch 2/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6916 - acc: 0.7790 - val_loss: 0.6916 - val_acc: 0.7790
+    Epoch 3/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6915 - acc: 0.7790 - val_loss: 0.6915 - val_acc: 0.7790
+    Epoch 4/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6914 - acc: 0.7790 - val_loss: 0.6913 - val_acc: 0.7790
+    Epoch 5/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6913 - acc: 0.7790 - val_loss: 0.6912 - val_acc: 0.7790
+    Epoch 6/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6912 - acc: 0.7790 - val_loss: 0.6911 - val_acc: 0.7790
+    Epoch 7/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6911 - acc: 0.7790 - val_loss: 0.6910 - val_acc: 0.7790
+    Epoch 8/8
+    1007440/1007440 [==============================] - 2s 2us/sample - loss: 0.6909 - acc: 0.7790 - val_loss: 0.6909 - val_acc: 0.7790
+    
+
+
+
+
+    <tensorflow.python.keras.callbacks.History at 0x7f648aa8a2e8>
+
+
+
+
+```python
+y_pred_train = model.predict(X_train, batch_size=1000)
+```
+
+
+```python
+from sklearn.metrics import confusion_matrix
+
+confusion_matrix(y_train.flatten(), np.argmax(y_pred_train, axis=1))
+```
+
+
+
+
+    array([[     0,      0,   2520,      0,      0],
+           [     0,      0,    560,      0,      0],
+           [     0,      0, 784840,      0,      0],
+           [     0,      0, 128240,      0,      0],
+           [     0,      0,  91280,      0,      0]])
+
+
+
+# Metric
+
+
+```python
+np.unique(y_test, return_counts=True)
+```
+
+
+
+
+    (array([0, 1, 2, 3, 4]), array([   630,    140, 196210,  32060,  22820]))
+
+
+
+
+```python
+np.unique(X_train, return_counts=True)
+```
+
+
+
+
+    (array([0.   , 0.125, 0.25 , 0.375, 0.5  , 0.625, 0.75 , 0.875, 1.   ]),
+     array([93266949,  4772426,  1724837,   652990,   226204,    69197,
+               28314,     2799,      284]))
+
+
+
+
+```python
+np.argmax(y_pred_train, axis=1)
+```
+
+
+
+
+    array([2, 2, 2, ..., 2, 2, 2])
+
+
+
+
+```python
+y_train.flatten()
+```
+
+
+
+
+    array([2, 2, 2, ..., 2, 4, 2])
+
+
+
+
+```python
+from sklearn.metrics import confusion_matrix, log_loss
+
+
+import itertools    
+class_names = ['11', '13', '211', '321', '2212']
+
+
+def plot_confusion_mtx(trained_model):
+    """Plot the confusion matrix with color and labels"""
+    matrix = confusion_matrix(y_test.flatten(),
+                              np.argmax(trained_model.predict(X_test, batch_size=50000),
+                              axis=1))
+    plt.clf()
+
+    # place labels at the top
+    plt.gca().xaxis.tick_top()
+    plt.gca().xaxis.set_label_position('top')
+
+    # plot the matrix per se
+    plt.imshow(matrix, interpolation='nearest', cmap=plt.cm.Blues)
+
+    # plot colorbar to the right
+    plt.colorbar()
+    fmt = 'd'
+
+    # write the number of predictions in each bucket
+    thresh = matrix.max() / 2.
+    for i, j in itertools.product(range(matrix.shape[0]), range(matrix.shape[1])):
+
+        # if background is dark, use a white number, and vice-versa
+        plt.text(j, i, format(matrix[i, j], fmt),
+             horizontalalignment="center",
+             color="white" if matrix[i, j] > thresh else "black")
+
+    tick_marks = np.arange(len(class_names))
+    plt.xticks(tick_marks, class_names, rotation=45)
+    plt.yticks(tick_marks, class_names)
+    plt.tight_layout()
+    plt.ylabel('True label',size=14)
+    plt.xlabel('Predicted label',size=14)
+    plt.show()
+    
+    
+def display_confusion_matx(best_model_path):
+    if os.path.isfile(best_model_path):
+        with open(best_model_path, 'rb') as f:
+            best_clf = pickle.load(f)
+        plot_confusion_mtx(best_clf)
+        
+        
+#display_confusion_matx('1_original_data_LGBMClassifier')
+```
+
+
+```python
+np.unique(y_pred, return_counts=True)
+```
+
+
+
+
+    (array([0, 2]), array([3, 3]))
+
+
+
+
+```python
+plot_confusion_mtx(model)
+```
+
+
+![png](/images/2020-02-15-Particles/output_29_0.png)
+
+# tensorflow with other param
+
+
+Using a different model
+
+
+```python
+model = Sequential()
+input_dim = X_train.shape[1]
+nb_classes = y_train.shape[1]
+
+model.add(Dense(10, input_dim=input_dim, activation='relu', name='input'))
+model.add(Dense(20, activation='relu', name='fc1'))
+model.add(Dense(10, activation='relu', name='fc2'))
+model.add(Dense(nb_classes, activation='softmax', name='output'))
+
+model.compile(loss='categorical_crossentropy',
+              optimizer='nadam',
+              metrics=['accuracy'])
+```
+
+    WARNING:tensorflow:From C:\Anaconda3\lib\site-packages\tensorflow\python\ops\resource_variable_ops.py:435: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+    Instructions for updating:
+    Colocations handled automatically by placer.
+    
+
+
+```python
+# from sklearn.utils import class_weight
+# class_weight = class_weight.compute_class_weight('balanced', np.unique(y_train), y_train)
+#class_weight = {0 : 1., 1: 20.}
+model.fit(X_train, y_train, epochs=3, batch_size=50000, class_weight={0: 3150, 1: 700, 2: 981050, 3: 160300, 4: 114100})
+```
+
+    WARNING:tensorflow:From C:\Anaconda3\lib\site-packages\tensorflow\python\ops\math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+    Instructions for updating:
+    Use tf.cast instead.
+    Epoch 1/3
+    1007440/1007440 [==============================] - 3s 3us/sample - loss: 1.5577 - acc: 0.4882
+    Epoch 2/3
+    1007440/1007440 [==============================] - 3s 3us/sample - loss: 1.1783 - acc: 0.7790
+    Epoch 3/3
+    1007440/1007440 [==============================] - 3s 3us/sample - loss: 0.5487 - acc: 0.7790
+    
+
+
+
+
+    <tensorflow.python.keras.callbacks.History at 0x212810bd2b0>
+
+
+
+
+```python
+score = model.evaluate(X_test, y_test, batch_size=50000)
+score
+```
+
+    251860/251860 [==============================] - 0s 1us/sample - loss: 1.0910 - acc: 0.7790
+    
+
+
+
+
+    [1.0910033097309182, 0.7790439]
+
+
+
+
+```python
+%matplotlib inline
+from sklearn import metrics
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set(font_scale=2)
+predictions = model.predict(X_test, batch_size=50000)
+
+LABELS = ['Normal','Fraud'] 
+
+max_test = np.argmax(y_test, axis=1)
+max_predictions = np.argmax(predictions, axis=1)
+confusion_matrix = metrics.confusion_matrix(max_test, max_predictions)
+
+plt.figure(figsize=(5, 5))
+sns.heatmap(confusion_matrix, xticklabels=LABELS, yticklabels=LABELS, annot=True, fmt="d", annot_kws={"size": 20});
+plt.title("Confusion matrix", fontsize=20)
+plt.ylabel('True label', fontsize=20)
+plt.xlabel('Predicted label', fontsize=20)
+plt.show()
+```
+
+
+![png](/images/2020-02-15-Particles/    output_4_0.png)
+

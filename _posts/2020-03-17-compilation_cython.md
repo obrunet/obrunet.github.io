@@ -5,8 +5,8 @@ categories:
   - Pythonic ideas
 tags: [Coding]
 header:
-  image: "/images/2020-03-17-compilation_cython/yancy-min-842ofHC6MaI-unsplash (copy)"
-excerpt: "How to master loops in Python"
+  image: "/images/2020-03-17-compilation_cython/yancy-min-842ofHC6MaI-unsplash.jpg"
+excerpt: "How to create dynamically & statically linked ELF binaries from python script with Cython"
 mathjax: "true"
 ---
 
@@ -62,7 +62,7 @@ print("machine : ", os_info[4])
 ```
 
     name :  Linux
-    name of machine on network :  sunflowa-desktop
+    name of machine on network :  my_user_name-desktop
     release :  5.3.0-51-generic
     version :  #44~18.04.2-Ubuntu SMP Thu Apr 23 14:27:18 UTC 2020
     machine :  x86_64
@@ -76,7 +76,7 @@ When executing the python interpreter, it provides the following result on my bo
 ```
 
     name :  Linux
-    name of machine on network :  sunflowa-desktop
+    name of machine on network :  my_user_name-desktop
     release :  5.3.0-51-generic
     version :  #44~18.04.2-Ubuntu SMP Thu Apr 23 14:27:18 UTC 2020
     machine :  x86_64
@@ -100,23 +100,9 @@ Typically Cython is used to create extension modules for use from Python program
 !ls -ahl
 ```
 
-    total 1,2M
-    drwxrwxr-x  5 sunflowa sunflowa 4,0K mai    9 17:31  .
-    drwxrwxr-x 10 sunflowa sunflowa 4,0K mai    9 11:01  ..
-    drwxrwxr-x  2 sunflowa sunflowa 4,0K mai    9 13:33  back
-    -rw-r--r--  1 sunflowa sunflowa 4,1K déc.  15 16:32  cmd_shell.sh
-    -rw-------  1 sunflowa sunflowa 625K déc.  15 16:08 'Code Size Optimization_ GCC Compiler Flags _ Interrupt.pdf'
-    -rw-rw-r--  1 sunflowa sunflowa  12K mai    9 14:19  dynamic_linking211.png
-    drwxrwxr-x  3 sunflowa sunflowa 4,0K déc.  14 13:42  .idea
-    drwxr-xr-x  2 sunflowa sunflowa 4,0K mai    9 13:31  .ipynb_checkpoints
-    -rw-rw-r--  1 sunflowa sunflowa  17K mai    9 14:12  linking1.png
-    -rw-------  1 sunflowa sunflowa 152K déc.  14 14:44 'python - Cython_ Compile a Standalone Static Executable - Stack Overflow.pdf'
-    -rw-rw-r--  1 sunflowa sunflowa 9,8K mai    9 14:17  static_linking322.png
-    -rw-------  1 sunflowa sunflowa  99K déc.  15 15:50 'Static linking .so into my executable - Unix & Linux Stack Exchange.pdf'
-    -rw-r--r--  1 sunflowa sunflowa 127K mai    9 17:31  test.c
-    -rwxr-xr-x  1 sunflowa sunflowa  46K mai    9 14:20  test_dyn
-    -rw-rw-r--  1 sunflowa sunflowa  224 déc.  14 13:42  test.py
-    -rw-r--r--  1 sunflowa sunflowa  16K mai    9 15:15  Untitled.ipynb
+    -rw-r--r--  1 my_user_name my_user_name 127K mai    9 17:31  test.c
+    -rw-rw-r--  1 my_user_name my_user_name  224 déc.  14 13:42  test.py
+
 
 
 ## Static vs Dynamic Linking
@@ -145,8 +131,8 @@ When the binary is executed, the dynamic linker will find the required dependenc
 
 There are pros and cons to these two approaches:
 
-- __Static linking__ allows containing all dependencies in a single binary, making it more portable and simple to execute, at the expense of the file size.
-- __Dynamic linking__ allows the binary to be smaller, at the expense of having to ensure that the required dependencies exist in the target system that the binary will be executed in.
+* __Static linking__ allows containing all dependencies in a single binary, making it more portable and simple to execute, at the expense of the file size.
+* __Dynamic linking__ allows the binary to be smaller, at the expense of having to ensure that the required dependencies exist in the target system that the binary will be executed in.
 
 ## Dynamic linking
 
@@ -154,9 +140,9 @@ There are pros and cons to these two approaches:
 
 It outputs various information about installed libraries. This information may include:
 
-- Parameters for C or C++ compiler
-- Parameters for linker
-- Version of the package in question
+* Parameters for C or C++ compiler
+* Parameters for linker
+* Version of the package in question
 
 
 ```python
@@ -174,23 +160,9 @@ Now we're able to compile a dynamic elf binary with the gcc compile and the foll
 !ls -ahl
 ```
 
-    total 1,2M
-    drwxrwxr-x  5 sunflowa sunflowa 4,0K mai    9 17:31  .
-    drwxrwxr-x 10 sunflowa sunflowa 4,0K mai    9 11:01  ..
-    drwxrwxr-x  2 sunflowa sunflowa 4,0K mai    9 13:33  back
-    -rw-r--r--  1 sunflowa sunflowa 4,1K déc.  15 16:32  cmd_shell.sh
-    -rw-------  1 sunflowa sunflowa 625K déc.  15 16:08 'Code Size Optimization_ GCC Compiler Flags _ Interrupt.pdf'
-    -rw-rw-r--  1 sunflowa sunflowa  12K mai    9 14:19  dynamic_linking211.png
-    drwxrwxr-x  3 sunflowa sunflowa 4,0K déc.  14 13:42  .idea
-    drwxr-xr-x  2 sunflowa sunflowa 4,0K mai    9 13:31  .ipynb_checkpoints
-    -rw-rw-r--  1 sunflowa sunflowa  17K mai    9 14:12  linking1.png
-    -rw-------  1 sunflowa sunflowa 152K déc.  14 14:44 'python - Cython_ Compile a Standalone Static Executable - Stack Overflow.pdf'
-    -rw-rw-r--  1 sunflowa sunflowa 9,8K mai    9 14:17  static_linking322.png
-    -rw-------  1 sunflowa sunflowa  99K déc.  15 15:50 'Static linking .so into my executable - Unix & Linux Stack Exchange.pdf'
-    -rw-r--r--  1 sunflowa sunflowa 127K mai    9 17:31  test.c
-    -rwxr-xr-x  1 sunflowa sunflowa  46K mai    9 17:31  test_dyn
-    -rw-rw-r--  1 sunflowa sunflowa  224 déc.  14 13:42  test.py
-    -rw-r--r--  1 sunflowa sunflowa  16K mai    9 15:15  Untitled.ipynb
+    -rw-r--r--  1 my_user_name my_user_name 127K mai    9 17:31  test.c
+    -rwxr-xr-x  1 my_user_name my_user_name  46K mai    9 17:31  test_dyn
+    -rw-rw-r--  1 my_user_name my_user_name  224 déc.  14 13:42  test.py
 
 
 Let's retrieve infos on the bin :
@@ -230,7 +202,7 @@ And check if it works on our OS (we'll test it on other box later...):
 ```
 
     name :  Linux
-    name of machine on network :  sunflowa-desktop
+    name of machine on network :  my_user_name-desktop
     release :  5.3.0-51-generic
     version :  #44~18.04.2-Ubuntu SMP Thu Apr 23 14:27:18 UTC 2020
     machine :  x86_64
@@ -316,16 +288,11 @@ which will be provided by the dev packages of those libraries. Since my system i
 
     libexpat1-dev:amd64: /usr/lib/x86_64-linux-gnu/libexpat.a
     zlib1g-dev:amd64: /usr/lib/x86_64-linux-gnu/libz.a
-    musl-dev:amd64: /usr/lib/x86_64-linux-musl/libpthread.a
     libc6-dev:amd64: /usr/lib/x86_64-linux-gnu/libpthread.a
     libc6-dev:amd64: /usr/lib/x86_64-linux-gnu/libdl.a
-    musl-dev:amd64: /usr/lib/x86_64-linux-musl/libdl.a
     libc6-dev:amd64: /usr/lib/x86_64-linux-gnu/libutil.a
-    musl-dev:amd64: /usr/lib/x86_64-linux-musl/libutil.a
     libc6-dev:amd64: /usr/lib/x86_64-linux-gnu/libm.a
-    musl-dev:amd64: /usr/lib/x86_64-linux-musl/libm.a
     libc6-dev:amd64: /usr/lib/x86_64-linux-gnu/libc.a
-    musl-dev:amd64: /usr/lib/x86_64-linux-musl/libc.a
 
 
 and install them with:
@@ -345,17 +312,16 @@ Then we can make the statically linking by adding those infos in the gcc compila
 
     /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/libpython3.6m.a(dynload_shlib.o): In function `_PyImport_FindSharedFuncptr':
     (.text+0x7c): warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
-    /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/libpython3.6m.a(posixmodule.o): In function `posix_getgrouplist':
-    ints
-    -rw-rw-r--  1 sunflowa sunflowa  17K mai    9 14:12  linking1.png
-    -rw-------  1 sunflowa sunflowa 152K déc.  14 14:44 'python - Cython_ Compile a Standalone Static Executable - Stack Overflow.pdf'
-    -rw-rw-r--  1 sunflowa sunflowa 9,8K mai    9 14:17  static_linking322.png
-    -rw-------  1 sunflowa sunflowa  99K déc.  15 15:50 'Static linking .so into my executable - Unix & Linux Stack Exchange.pdf'
-    -rw-r--r--  1 sunflowa sunflowa 127K mai    9 17:31  test.c
-    -rwxr-xr-x  1 sunflowa sunflowa  46K mai    9 17:31  test_dyn
-    -rw-rw-r--  1 sunflowa sunflowa  224 déc.  14 13:42  test.py
-    -rwxr-xr-x  1 sunflowa sunflowa 8,3M mai    9 17:43  test_stat
-    -rw-r--r--  1 sunflowa sunflowa  21K mai    9 17:42  Untitled.ipynb
+    [...]
+    -rw-rw-r--  1 my_user_name my_user_name  17K mai    9 14:12  linking1.png
+    -rw-------  1 my_user_name my_user_name 152K déc.  14 14:44 'python - Cython_ Compile a Standalone Static Executable - Stack Overflow.pdf'
+    -rw-rw-r--  1 my_user_name my_user_name 9,8K mai    9 14:17  static_linking322.png
+    -rw-------  1 my_user_name my_user_name  99K déc.  15 15:50 'Static linking .so into my executable - Unix & Linux Stack Exchange.pdf'
+    -rw-r--r--  1 my_user_name my_user_name 127K mai    9 17:31  test.c
+    -rwxr-xr-x  1 my_user_name my_user_name  46K mai    9 17:31  test_dyn
+    -rw-rw-r--  1 my_user_name my_user_name  224 déc.  14 13:42  test.py
+    -rwxr-xr-x  1 my_user_name my_user_name 8,3M mai    9 17:43  test_stat
+    -rw-r--r--  1 my_user_name my_user_name  21K mai    9 17:42  Untitled.ipynb
 
 
 Let's try if we can make the binary a little smaller by compressing it with a packer like UPX:
@@ -427,7 +393,7 @@ And the result is still the same when we launch the executable :
 ```
 
     name :  Linux
-    name of machine on network :  sunflowa-desktop
+    name of machine on network :  my_user_name-desktop
     release :  5.3.0-51-generic
     version :  #44~18.04.2-Ubuntu SMP Thu Apr 23 14:27:18 UTC 2020
     machine :  x86_64
@@ -476,10 +442,10 @@ There are also significant differences between the executables sizes. Obviously,
 !ls -ahl
 ```
 
-    -rw-r--r--  1 sunflowa sunflowa 127K mai    9 17:31  test.c
-    -rwxr-xr-x  1 sunflowa sunflowa  46K mai    9 17:31  test_dyn
-    -rw-rw-r--  1 sunflowa sunflowa  224 déc.  14 13:42  test.py
-    -rwxr-xr-x  1 sunflowa sunflowa 3,5M mai    9 17:43  test_stat
-    -rwxr-xr-x  1 sunflowa sunflowa 8,3M mai    9 17:44  test_stat_not_packed
-    -rwxr-xr-x  1 sunflowa sunflowa 3,0M mai    9 17:46  test_stat_stripped
-    -rwxr-xr-x  1 sunflowa sunflowa 6,7M mai    9 17:47  test_stat_stripped_not_packed
+    -rw-r--r--  1 my_user_name my_user_name 127K mai    9 17:31  test.c
+    -rwxr-xr-x  1 my_user_name my_user_name  46K mai    9 17:31  test_dyn
+    -rw-rw-r--  1 my_user_name my_user_name  224 déc.  14 13:42  test.py
+    -rwxr-xr-x  1 my_user_name my_user_name 3,5M mai    9 17:43  test_stat
+    -rwxr-xr-x  1 my_user_name my_user_name 8,3M mai    9 17:44  test_stat_not_packed
+    -rwxr-xr-x  1 my_user_name my_user_name 3,0M mai    9 17:46  test_stat_stripped
+    -rwxr-xr-x  1 my_user_name my_user_name 6,7M mai    9 17:47  test_stat_stripped_not_packed

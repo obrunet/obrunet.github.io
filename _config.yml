@@ -16,7 +16,7 @@
 title: Peregrination in a world of data
 email: o.brunet[{No_spam}]outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Peregrination in a world of data - Pythonic code, Data Science, Deep Learning & Neuroscience.
+  Peregrination in a world of data - Pythonic code, Data Engineering, Deep Learning & Neuroscience.
 twitter_username: obrunet
 github_username: obrunet
 minimal_mistakes_skin: default
@@ -58,8 +58,8 @@ plugins:
 author:
   name   : Olivier Brunet
   avatar : "/images/bio.jpg"
-  bio    : "Data Scientist"
-  location  : "Paris, FR"
+  bio    : "Data Engineer"
+  location  : "Courbevoie - Paris, FR"
   kaggle  : "https://www.kaggle.com/obrunet"
   linkedin  : "olivier-brunet-16a2312a"
   links:

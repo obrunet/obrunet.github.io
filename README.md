@@ -3,7 +3,7 @@
 Welcome to my web site, enjoy your stay.
 
 ## Content
-* Data Engineering projects, explanations on machine learning models, deep learning studies
+* Data Science / Engineering projects, explanations on Machine Learning models, Deep Learning use cases
 * Opensource / Linux news / Cyber security
 * Informations on Smart Cities, Grids, Buildings
 
@@ -16,7 +16,6 @@ Welcome to my web site, enjoy your stay.
 ## Blog posts already done but not published (will be made soon)
 
 - Wind generation
-- Cirta particle
 - Audio deep learning
 - Data engineering
 - Hierachical clustering
@@ -34,8 +33,6 @@ Welcome to my web site, enjoy your stay.
 
 ## To do asap
 - post on 30 wind years
-- chall z.indi audio
-- chall z.indi particles
 - ML in scala
 - insincere questions part 2
 - description of data with stats

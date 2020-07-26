@@ -22,6 +22,14 @@ Welcome to my web site, enjoy your stay.
 - DBSCAN
 - Scraping AI generated faces
 
+
+- Predict sex from brain rhythms https://challengedata.ens.fr/challenges/27
+- Defect Prediction on production lines https://challengedata.ens.fr/challenges/36
+- Dyni Odontocete Click Classification, 10 species https://challengedata.ens.fr/challenges/32
+- Wind Power forecasting for the day-ahead energy market https://challengedata.ens.fr/challenges/34
+- Metamodels to improve energy consumptions and comfort control in big buildings https://challengedata.ens.fr/challenges/28
+- 
+
 ## Next blog posts
 
 - TEDx talks

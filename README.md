@@ -45,6 +45,10 @@ Welcome to my web site, enjoy your stay.
 - https://www.kaggle.com/yashwanthkumbam/apaddos-dataset/kernels
 - https://www.kaggle.com/remosin/bot-detection/kernels
 - https://www.kaggle.com/omegaji/bots-ua-parsed
+- https://www.kaggle.com/hawkcurry/2019-trendmicro-ctf-wildcard-400/kernels
+- https://www.kaggle.com/ang3loliveira/malware-analysis-datasets-raw-pe-as-image
+- https://www.kaggle.com/ellipticco/elliptic-data-set
+- samples from Vxug and books
 
 ## Other links 
 

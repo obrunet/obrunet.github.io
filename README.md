@@ -39,6 +39,8 @@ Welcome to my web site, enjoy your stay.
 - challs
 
 ## To do asap
+- TED talk about memory with a summary
+- My Anki memory flashcards (spark, python, scala, python vs scala...) https://towardsdatascience.com/python-vs-scala-a-comparison-of-the-basic-commands-fae23b3ede23
 - post on 30 wind years
 - ML in scala
 - insincere questions part 2

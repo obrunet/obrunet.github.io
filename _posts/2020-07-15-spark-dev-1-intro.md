@@ -10,7 +10,7 @@ excerpt: "How to create a session, select and manipulate columns, retrieve basic
 mathjax: "true"
 ---
 
-Banner from a cropped photo by Peter Spencer from Pexels
+Banner from a cropped hoto by [Jamie Street](https://unsplash.com/@jamie452) on Unsplash
 
 In order to prepare the Databricks' Associate Developer for Apache Spark 2.4 certification, i've made all the examples of the book ["Spark: The Definitive Guide" 
 by Bill Chambers, Matei Zaharia (O'reilly - Feb 2018](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/) as exercices. This book is an invaluable resource ! There are from time to time several variations from the orginal examples. 
@@ -31,23 +31,13 @@ Create a spark session
 import org.apache.spark.sql.SparkSession
 ```
 
-
     Intitializing Scala interpreter ...
-
-
 
     Spark Web UI available at http://ed1efe135804:4040
     SparkContext available as 'sc' (version = 3.0.0, master = local[*], app id = local-1597170050923)
     SparkSession available as 'spark'
 
-
-
-
-
-
     import org.apache.spark.sql.SparkSession
-
-
 
 
 
@@ -66,26 +56,7 @@ val spark = SparkSession.builder
 
 
 
-```scala
-!ls ../../../src
-```
-
-    01.gentle_intro_COMPLEMENT.ipynb
-    01.gentle_intro.ipynb
-    01.gentle_intro_TEST.ipynb
-    02.basic_structured_op_COMPLEMENT.ipynb
-    02.basic_structured_op.ipynb
-    02.basic_structured_op_TEST.ipynb
-    03.aggregations_COMPLETE.ipynb
-    03.aggregations_INCOMPLETE.ipynb
-    03.aggregations.ipynb
-    04.working_with_different_types_of_data.ipynb
-    05.joins.ipynb
-    05.joins_TEST.ipynb
-    201508_station_data.csv
-    201508_trip_data.csv
-    spark_docker.txt
-    
+  
 
 
 Create a DF with range
@@ -106,12 +77,6 @@ test_df.show(5)
     |   4|
     +----+
     only showing top 5 rows
-    
-
-
-
-
-
     test_df: org.apache.spark.sql.DataFrame = [numb: bigint]
 
 
@@ -160,12 +125,6 @@ df.select("Trip ID", "Duration", "Start Date", "Start Station", "Start Terminal"
     | 913453|     789|8/31/2015 23:09|Embarcadero at Fo...|            51|8/31/2015 23:22|
     +-------+--------+---------------+--------------------+--------------+---------------+
     only showing top 5 rows
-    
-
-
-
-
-
     df: org.apache.spark.sql.DataFrame = [Trip ID: int, Duration: int ... 9 more fields]
 
 
@@ -588,12 +547,6 @@ df_renamed.select("Duration", "End_station", "Bike #").show(2)
     |    1036|Mountain View Cit...|    35|
     +--------+--------------------+------+
     only showing top 2 rows
-    
-
-
-
-
-
     df_renamed: org.apache.spark.sql.DataFrame = [Trip ID: int, Duration: int ... 9 more fields]
 
 

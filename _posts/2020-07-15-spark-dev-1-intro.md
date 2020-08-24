@@ -10,7 +10,7 @@ excerpt: "How to create a session, select and manipulate columns, retrieve basic
 mathjax: "true"
 ---
 
-Banner from a cropped hoto by [Jamie Street](https://unsplash.com/@jamie452) on Unsplash
+Banner from a cropped photo by [Jamie Street](https://unsplash.com/@jamie452) on Unsplash
 
 In order to prepare the Databricks' Associate Developer for Apache Spark 2.4 certification, i've made all the examples of the book ["Spark: The Definitive Guide" 
 by Bill Chambers, Matei Zaharia (O'reilly - Feb 2018](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/) as exercices. This book is an invaluable resource ! There are from time to time several variations from the orginal examples. 

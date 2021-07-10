@@ -10,8 +10,6 @@ excerpt: "All the core concepts and syntax in a concise summary that comes with 
 mathjax: "true"
 ---
 
-# An exhaustive Python cheat sheet 1/2
-
 You'll find below a summary of the most important key features of the Python programming language. Its clear syntax is illustrated trough simple examples. 
 
 I'll probably make an other cheat sheet in the future with a focus on the __Object Oriented__ part of Python and on __functionnal programming__. You can find all of this content in a dedicated [anki deck](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.apkg) to help you memorizing it.
@@ -34,30 +32,31 @@ what are the characteristics of the Python programming language ?
 - functional programming
 - described as a "batteries included"
 
-### Definitions  
-Explain what means "interpreted" ?  
+## Definitions  
+
+__Explain what means "interpreted" ?__  
 An interpreter is a computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program. 
 
-Explain what means "high-level" ?  
+__Explain what means "high-level" ?__  
 A high-level programming language is a programming language with strong abstraction from the details of the computer.
 
-Explain what means "object-oriented" ?  
+__Explain what means "object-oriented" ?__    
 Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.
 
-Explain what means "dynamically-typed" ?  
+__Explain what means "dynamically-typed" ?__    
 This means that the Python interpreter does type checking only as code runs, and the type of a variable is allowed to change over its lifetime.
 
-Explain what means "garbage-collected" ?  
+__Explain what means "garbage-collected" ?__   
 Garbage collection (GC) is a form of automatic memory management. The garbage collector attempts to reclaim memory which was allocated by the program, but is no longer referenced—also called garbage.
 
-Explain what means "structured (procedural)" ?   
+__Explain what means "structured (procedural)" ?__     
 Structured programming is a programming paradigm aimed at improving the clarity, quality, and development time by making extensive use of the structured control flows and repetition, block structures.
 Procedural programming is an otherparadigm based on the concept of the routine or subroutine(series of computational steps). 
 
-Explain what means "functional programming" ?  
+__Explain what means "functional programming" ?__   
 Functional programming is a paradigm where programs are constructed by applying and composing functions (rather than a sequence of imperative statements which update the running state of the program).
 
-Explain why Python is described as "batteries included" ?  
+__Explain why Python is described as "batteries included" ?__    
 This is due to its comprehensive standard library
 
 ## Basic Types
@@ -459,7 +458,7 @@ my_list
 
 __Iterables objects - properties__  
 
-- | List | Tuple | Set | Dict
+/ | List | Tuple | Set | Dict
 ---|---|---|---|---
 symbol|[,]|(,)|{,}|{k: v,}
 type|ordered|ordered|unordered|unordered
@@ -906,10 +905,37 @@ True and True
     True
 
 
+## Misc Operators
 
-https://www.w3schools.com/python/python_operators.asp
+[Source w3schools](https://www.w3schools.com/python/python_operators.asp)
 
-and bitwise operator
+### Python Arithmetic Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/1_arithmetic.png)
+
+
+### Python Assignment Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/2_assignment.png)
+
+
+### Python Comparison Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/3_comparison.png)
+
+
+### Python Logical Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/4_logical.png)
+
+
+### Python Identity Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/5_identity.png)
+
+
+### Python Membership Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/6_membership.png)
+
+
+### Python Bitwise Operators
+![png](/images/2020-11-15-python_cheat_sheet_1/7_bitwise.png)
+
 
 
 ```python
@@ -1034,23 +1060,13 @@ a != b
 
 
 
-__Highest to lowest precedence of all the operators__
+__Python Operator Precedence__
+From Python documentation on [operator precedence (Section 5.15)](http://docs.python.org/reference/expressions.html)
 
-**
+Highest precedence at top, lowest at bottom.
+Operators in the same box evaluate left to right.
 
-~ + - 
-
-* / % //
-
-& ^ |
-
-<= < > >=
-
-== !=
-
-=
-
-%=  /=  -=  +=  *=  **=
+![png](/images/2020-11-15-python_cheat_sheet_1/9_precedence.png)
 
 concatenate 2 lists
 
@@ -2429,20 +2445,10 @@ list(filter(lambda x: x%2 == 0, a))
 
 ## PEP 8
 
-table here:  
-https://realpython.com/python-pep8/
+[Source Real Python](https://realpython.com/python-pep8/)
 
-my_function
-
-my_var
-
-CONSTANT
-
-MyClass
-
-class_method
-
-sum = var + var_bis**3  
+![png](/images/2020-11-15-python_cheat_sheet_1/8_pep.png)
+ 
 
 _single_leading_underscore  
 This convention is used for declaring private variables, functions, methods and classes in a module. Anything with this convention are ignored in from module import *. 

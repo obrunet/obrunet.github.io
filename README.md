@@ -1,6 +1,7 @@
 
 # My personnal web site hosted on github pages
-Welcome to my web site, enjoy your stay.
+Welcome to [my web site](https://obrunet.github.io/), enjoy your stay.
+
 
 ## Content
 * Data Science / Engineering projects, explanations on Machine Learning models, Deep Learning use cases

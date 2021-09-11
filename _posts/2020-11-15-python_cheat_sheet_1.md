@@ -14,7 +14,7 @@ You'll find below a summary of the most important key features of the Python pro
 
 I'll probably make an other cheat sheet in the future with a focus on the __Object Oriented__ part of Python and on __functionnal programming__. You can find all of this content in a dedicated [anki deck](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.apkg) to help you memorizing it.
 
-Cards are composed of a simple challenge, then answer shows the code and its' result in [a dedicated jupyter notebook also available on github](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/python_cheat_sheet_reworked.ipynb).
+Cards are composed of a simple challenge, then answer shows the code and its' result in [a dedicated jupyter notebook also available on github](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.ipynb).
 
 
 

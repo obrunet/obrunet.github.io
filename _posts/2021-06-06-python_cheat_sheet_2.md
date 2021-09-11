@@ -10,8 +10,6 @@ excerpt: "All the advanced concepts with concise examples (OOP, functions...)"
 mathjax: "true"
 ---
 
-You'll find below a summary of the most important key features of the Python programming language. Its clear syntax is illustrated trough simple examples. 
-
 After a 1st post covering the core concepts, this 2nd part focus on the __Object Oriented__ part of Python and on __functionnal programming__. You can find all of this content in a dedicated [anki deck WIP]() to help you memorizing it.
 
 Cards are composed of a simple challenge, then answer shows the code and its' result in [a dedicated jupyter notebook also available on github](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%202-2.ipynb).

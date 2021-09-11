@@ -12,9 +12,9 @@ mathjax: "true"
 
 You'll find below a summary of the most important key features of the Python programming language. Its clear syntax is illustrated trough simple examples. 
 
-I've made [an other cheat sheet with a focus on the __Object Oriented__ part of Python and on __functionnal programming__](https://obrunet.github.io/pythonic%20ideas/python_cheat_sheet_1/). You can find all of this content in a dedicated [anki deck](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.apkg) to help you memorizing it.
+I've made [an other cheat sheet with a focus on the __Object Oriented__ part of Python and on __functionnal programming__](https://obrunet.github.io/pythonic%20ideas/python_cheat_sheet_2/). You can find all of this content in a dedicated [anki deck](https://github.com/obrunet/Memory_systems_-_Anki_decks/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.apkg) to help you memorizing it.
 
-Cards are composed of a simple challenge, then answer shows the code and its' result in [a dedicated jupyter notebook also available on github](https://github.com/obrunet/Anki_decks_-_memory_cards/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.ipynb).
+Cards are composed of a simple challenge, then answer shows the code and its' result in [a dedicated jupyter notebook also available on github](https://github.com/obrunet/Memory_systems_-_Anki_decks/blob/master/01.My_own_decks/Programming_languages/Python/Python%203%20Cheat%20Sheet%201-2.ipynb).
 
 
 

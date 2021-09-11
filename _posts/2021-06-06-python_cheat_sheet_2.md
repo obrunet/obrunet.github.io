@@ -1469,7 +1469,9 @@ print(c.toJSON())
 
 ### Understanding composition
 
-a concept that allows to create complex objects out of simpler ones. It is different than inheritance but both two are not exclusive. For instance, a monolithic class definition can be made more extensible & flexible by composiing it with simpler class objects, each of which is responsible for its own features & data. See screenshot.
+a concept that allows to create complex objects out of simpler ones. It is different than inheritance but both two are not exclusive. For instance, a monolithic class definition can be made more extensible & flexible by composiing it with simpler class objects, each of which is responsible for its own features & data.
+
+![png](/images/2021-06-06-python_cheat_sheet_2/composition.png)
 
 
 ```python

@@ -1,6 +1,6 @@
 ---
 title: "An exhaustive Python cheat sheet 1/2"
-date: 2020-11-15
+date: 2020-10-15
 categories:
   - Pythonic ideas
 tags: [Coding]

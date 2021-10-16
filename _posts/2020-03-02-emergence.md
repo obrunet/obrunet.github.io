@@ -1,6 +1,6 @@
 ---
 title: "Emergence – How Stupid Things Become Smart Together"
-date: 2020-12-01
+date: 2020-03-02
 categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]

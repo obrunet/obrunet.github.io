@@ -1350,7 +1350,7 @@ print("Cluster nb / Nb of countries in the cluster", X.label.value_counts())
 
 # Conclusion
 
-At the end, we are able to list the countries in the E.U, countries which share the same profiles when it comes to produces wind energy. To be honest, this was not a difficult task : the data are already cleaned and there is no need to use complicated machine learning here. But knowing the countries with the same characteristics will be usefull for the [second step] when we will analyze each profile.
+At the end, we are able to list the countries in the E.U, countries which share the same profiles when it comes to produces wind energy. To be honest, this was not a difficult task : the data are already cleaned and there is no need to use complicated machine learning here. But knowing the countries with the same characteristics will be usefull for the [second step](https://obrunet.github.io/data%20science/wind-energy-eda/) when we will analyze each profile.
 
 You will find below the list of countries in each cluster :
 

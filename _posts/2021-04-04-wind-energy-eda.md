@@ -17,7 +17,7 @@ banner made from an image of [Narcisa Aciko on pexels.com](https://www.pexels.co
 
 This dataset contains hourly estimates of an area’s energy potential for 1986-2015 as a percentage of a power plant’s maximum output.
 
-In [the previous part](), we’ve made clusters of countries with similar profiles of wind generation. In this 2nd part we’re going to analyse and explore datas for one country representative of each cluster. As a reminder, here are what those 6 clusters made of :
+In [the previous part](https://obrunet.github.io/data%20science/wind-energy-clustering/), we’ve made clusters of countries with similar profiles of wind generation. In this 2nd part we’re going to analyse and explore datas for one country representative of each cluster. As a reminder, here are what those 6 clusters made of :
 Countries grouped by cluster  
 cluster nb : 0 EE FI LT LV PL SE  
 cluster nb : 1 ES PT  
@@ -641,13 +641,9 @@ sns.violinplot(x="variable", y="value", data=pd.melt(temp_df))
 
     <matplotlib.axes._subplots.AxesSubplot at 0x7fd840723890>
 
-
-
-
     
 ![png](/images/2021-04-04-wind-energy-eda/output_25_1.png)
     
-
 
 ## Correlations
 

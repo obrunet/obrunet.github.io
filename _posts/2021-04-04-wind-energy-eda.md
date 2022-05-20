@@ -6,7 +6,7 @@ categories:
 tags: [Kaggle Competitions]
 header:
   image: "/images/2021-02-25-wind-energy-clustering/pexels-narcisa-aciko-1292464 - cropped.png"
-excerpt: "IIn this 2nd part, let's analyze the data for a country of each cluster (variations over time and so on...)"
+excerpt: "In this 2nd part, let's analyze the data for a country of each cluster (variations over time and so on...)"
 mathjax: "true"
 ---
 

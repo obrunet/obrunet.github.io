@@ -5,7 +5,7 @@ categories:
   - Data Science
 tags: [Zindi Challenges]
 header:
-  image: "/images/2020-03-17-compilation_cython/yancy-min-842ofHC6MaI-unsplash.jpg"
+  image: "/images/2022-05-01-audio-birds/mark-stoop-NSsk7jknHx0-unsplash - cropped.png"
 excerpt: "Fowl Escapades - how to use deep learning to classify audio recordings of birds"
 mathjax: "true"
 ---
@@ -44,7 +44,9 @@ SampleSubmission.csv - is an example of what your submission file should look li
 
 Visualizations of some of the bird sounds you will encounter in this challenge.
 
-![Visualizations of some of the bird sounds you will encounter in this challenge.](viz.png "Visualizations of some of the bird sounds you will encounter in this challenge.")
+![png](/images/2022-05-01-audio-birds/viz.png)
+
+
 
 Some of these recordings are under a Creative Commons Attribution-NonCommercial-NoDerivs 2.5 license, meaning that you cannot sell or distribute modified copies of the calls. If you would like to share example calls, please download them directly from [xeno-canto](https://www.xeno-canto.org/) and give proper attribution to the author.
 
@@ -66,7 +68,8 @@ Audio files cannot be understood directly by the models. We need to convert them
 Here is a summary of [this blog post](https://towardsdatascience.com/extract-features-of-music-75a3f9bc265d)
 
 The audio signal is a three-dimensional signal in which three axes represent time, amplitude and frequency.
-![alt text](audio_signal_3d.jpeg "Title")
+![png](/images/2022-05-01-audio-birds/audio_signal_3d.jpeg)
+
 
 
 Generate features:  
@@ -353,7 +356,7 @@ sns.countplot(y="common_name", data=train)
 
 
     
-![png](output_15_1.png)
+![png](/images/2022-05-01-audio-birds/output_15_1.png)
     
 
 
@@ -466,7 +469,7 @@ sns.distplot(train['duration'], kde=False, rug=False);
 
 
     
-![png](output_19_0.png)
+![png](/images/2022-05-01-audio-birds/output_19_0.png)
     
 
 
@@ -489,7 +492,7 @@ sns.boxplot(x='common_name', y="duration", data=train)
 
 
     
-![png](output_21_1.png)
+![png](/images/2022-05-01-audio-birds/output_21_1.png)
     
 
 
@@ -518,7 +521,7 @@ gen_spectrogram(train['file_path'].sample(1).values[0])
 
 
     
-![png](output_23_1.png)
+![png](/images/2022-05-01-audio-birds/output_23_1.png)
     
 
 
@@ -1000,7 +1003,7 @@ sns.heatmap(df_cm, cmap="Blues", annot=True,annot_kws={"size": 12})# font size
 
 
     
-![png](output_56_1.png)
+![png](/images/2022-05-01-audio-birds/output_56_1.png)
     
 
 

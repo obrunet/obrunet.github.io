@@ -10,6 +10,7 @@ excerpt: "Fowl Escapades - how to use deep learning to classify audio recordings
 mathjax: "true"
 ---
 
+Banner image taken from a photo by [Mark Stoop](https://unsplash.com/@markstoop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash.
 
 This is an old Datascience challenge proposed by [Zindi](https://zindi.africa/). It mights be a little incomplete but it could be interesting as an example showing how to deal with audio files.
 

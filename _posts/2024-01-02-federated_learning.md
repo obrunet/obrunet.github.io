@@ -10,6 +10,7 @@ excerpt: "A sub-field of ML focusing on decentralization, motivated by issues su
 mathjax: "true"
 ---
 
+
 #### Table of content:  
 - Introduction
 - How FL works? (Technical overview)
@@ -21,6 +22,7 @@ mathjax: "true"
 - References
 
 
+
 # Introduction
 
 Existing data is not fully exploited primarily because it sits in silos and privacy concerns restrict its access.
@@ -29,7 +31,7 @@ Even if data anonymisation could bypass some limitations, removing metadata or P
 
 Centralising or releasing data, however, poses not only regulatory, ethical and legal challenges, related to privacy and data protection, but also technical ones. Controlling access and safely transferring it is a non-trivial, and sometimes impossible task.
 
- <font size="3">_"[...] Collaborative learning without centralising data or the promise of federated efforts..."_  </font>
+ *"[...] Collaborative learning without centralising data or the promise of federated efforts..."*
 
 Federated learning (FL) is a learning paradigm seeking to address the problems of data governance and privacy by training algorithms collaboratively without exchanging the data itself. 
 
@@ -72,7 +74,7 @@ Your phone personalizes the model locally, based on your usage ( A ). Many users
 An important note is that the training data still remains on the user's device; only the training result is encrypted and sent to the cloud. This collaborative way of training and developing machine learning models is powerful and has real-world applications.
 
 
- <font size="3">_"[...] only the model updates and parameters are shared, not the training data itself...."_  </font>
+ *"[...] only the model updates and parameters are shared, not the training data itself...."*
 
 
 Recent research has shown that models trained by FL can achieve performance levels comparable to ones trained on centrally hosted data sets and superior to models that only see isolated single-institutional data.
@@ -124,17 +126,18 @@ Let’s take the example of two banks from the same country. Although they have 
 
 ![](/images/2024-01-02-federated_learning/4.horizontal.png)
 
- <font size="3">_"[...] Horizontal Fl (or sample-based FL / homogenous FL), is introduced in the scenarios that data sets share the same feature space but different in samples."_  </font>
+ *"[...] Horizontal Fl (or sample-based FL / homogenous FL), is introduced in the scenarios that data sets share the same feature space but different in samples."*
 
 In vertical federated learning, two companies providing different services (e.g. banking and e-commerce) but having a large intersection of clientele might find room to collaborate on the different feature spaces they own, leading to better outcomes for both.
 
 ![](/images/2024-01-02-federated_learning/5.vertical.png)
 
- <font size="3">_"[...] Vertical FL (or feature-based FL) is applicable to the cases that two data sets share the same sample ID space but differ in feature space."_  </font>
+ *"[...] Vertical FL (or feature-based FL) is applicable to the cases that two data sets share the same sample ID space but differ in feature space."*
 
 
 
 __Federated Transfer Learning__: To my knowledge, there isn't any concrete production implementation yet, because transfer learning is already used widely without the need of decentralization, but one might consider the advantage of more datas...
+
 
 
 # Open source frameworks
@@ -153,7 +156,6 @@ I haven't tested those frameworks myself, so it wouldn't be possible to create a
 
 
 
-
 # Applications / Examples
 
 - FL was first introduced by Google in 2017 to improve text prediction in mobile keyboard 
@@ -167,6 +169,7 @@ Taxonomy for applications of federated learning across different domains and sub
 
 
 ![](/images/2024-01-02-federated_learning/taxonomy.jpg)
+
 
 
 # Challenges & considerations
@@ -196,6 +199,7 @@ It may also be helpful to measure the amount of contribution from each participa
 The storage, computational, and communication capabilities of each device in federated networks may differ due to variability in hardware (CPU, memory), network connectivity (3G, 4G, 5G, wifi), and power (battery level). Additionally, the network size and systems-related constraints on each device typically result in only a small fraction of the devices being active at once. For example, only hundreds of devices may be active in a million-device network. Each device may also be unreliable, and it is not uncommon for an active device to drop out at a given iteration. These system-level characteristics make issues such as stragglers and fault tolerance significantly more prevalent than in typical data center environments. There will be a tradeoff between maintaining the performance of the device and model accuracy.
 
 
+
 # Final thoughts
 
 FL has many benefits as it enhances user data privacy, its adherence with regulatory compliance, and its ability to break silos, but on the other had there are still many technical limitations, and there is a lot of work for competing companies to be on the same page in the way to create and use the same federated network...
@@ -204,16 +208,14 @@ Despite the fact that FL requires rigorous technical consideration to ensure tha
 
 A still open question at the moment is how inferior models learned through federated data are relative to ones where the data are pooled. Another open question concerns the trustworthiness of the edge devices and the impact of malicious actors on the learned model.
 
- <font size="3">_"Keeping data private is the major value addition of FL for each of the participating entities to achieve a common goal."_  </font>
+ *"Keeping data private is the major value addition of FL for each of the participating entities to achieve a common goal."*
 
 
 FL enables collaborative research for, even competing, companies, it might give birth to a new data ecosystem and create data alliances.
 
- <font size="3">_"FL can be paired with other privacy-preserving techniques like differential privacy to add noise and homomorphic encryption to encrypt model updates and obscure what the central server sees."_  </font>
+*"FL can be paired with other privacy-preserving techniques like differential privacy to add noise and homomorphic encryption to encrypt model updates and obscure what the central server sees."*
 
  
-![](/images/2024-01-02-federated_learning/comic.jpg)
-
 
 # Credits & References:
 

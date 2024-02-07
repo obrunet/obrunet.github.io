@@ -224,8 +224,7 @@ The main branch of the block consists of:
 
 The tensors of the main branch and the shortcut connection are then concatenated and a ReLU activation is applied to the output.
 
-<img src="/images/2023-09-15-deep_learnng_go/13_shufflenet_code_2.png" alt="Drawing" style="height: 500px;"/>
-
+![image info](/images/2023-09-15-deep_learnng_go/13_shufflenet_code_2.png)
 
 ### Results
 

@@ -13,7 +13,7 @@ mathjax: "true"
 Banner created from a photo of [Scott Webb on Pexels.com](https://www.pexels.com/fr-fr/photo/deux-cameras-de-securite-grey-bullet-430208/)
 
 
-![image info](./img/pexels-scott-webb-430208.jpg
+![image info](./img/pexels-scott-webb-430208.jpg)
 
 why sharing data?
 

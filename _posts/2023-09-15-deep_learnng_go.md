@@ -11,6 +11,7 @@ excerpt: "A round robin tournament of different architectures of neural nets to 
 mathjax: "true"
 ---
 
+Banner maded from [an image by Deepmind on Pexels.com](Photo de Google DeepMind: https://www.pexels.com/fr-fr/photo/abstrait-technologie-rechercher-apprendre-17483874/)
 
 ## INTRODUCTION
 
@@ -133,7 +134,7 @@ and then plot the metrics:
 
 You can see the results below: 
 
-<img src="/images/2023-09-15-deep_learnng_go/03.results.png" alt="Drawing" style="width: 270px;"/>  
+<img src="/images/2023-09-15-deep_learnng_go/03.results.png" alt="Drawing" style="width: 600px;"/>  
 
 
 
@@ -395,7 +396,6 @@ The table below summarises all the differents architectures tried for this proje
 - [01 - Game of Go - Wikipedia](https://en.wikipedia.org/wiki/Go_(game))  
 - [02 - AlaphaGo - Deepmind](https://www.deepmind.com/research/highlighted-research/alphago/the-challenge-match)
 - [03 - Vanishing gradient - kdnuggets](https://www.kdnuggets.com/2022/02/vanishing-gradient-problem.html#:~:text=When%20there%20are%20more%20layers,this%20the%20vanishing%20gradient%20problem.)
-(https://www.lamsade.dauphine.fr/~cazenave/papers/CosineAnnealingMixnetAndSwishActivationForComputerGo.pdf)
 - [04 - Residual Networks for Computer Go, Tristan Cazenave. IEEE Transactions on Games, Vol. 10 (1), pp. 107-110, March 2018](https://www.lamsade.dauphine.fr/~cazenave/papers/resnet.pdf)
 - [05 - Improving Model and Search for Computer Go, Tristan Cazenave. IEEE Conference on Games 2021](https://www.lamsade.dauphine.fr/~cazenave/papers/ImprovingModelAndSearchForComputerGo.pdf)
 - [06 - Mobile Networks for Computer Go, Tristan Cazenave. IEEE Transactions on Games, Vol. 14 (1), pp. 76-84, January 2022](https://www.lamsade.dauphine.fr/~cazenave/papers/MobileNetworksForComputerGo.pdf)

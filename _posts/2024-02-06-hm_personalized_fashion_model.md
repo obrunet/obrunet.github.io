@@ -17,36 +17,11 @@ Banner made from a photo by [Tembela Bohle on pexels](https://www.pexels.com/fr-
 
 In the 1st part of this project we've analyzed in depth the different available datasets. Now, in this second and final step we're going to build a product recommendations system based on data from previous transactions, by using the _LightFM_ python library.
 
-
-
-
 ```python
 !pip install lightfm
 ```
 
-    Collecting lightfm
-      Downloading lightfm-1.17.tar.gz (316 kB)
-    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m316.4/316.4 kB[0m [31m3.5 MB/s[0m eta [36m0:00:00[0m
-    [?25h  Preparing metadata (setup.py) ... [?25l[?25hdone
-    Requirement already satisfied: numpy in /usr/local/lib/python3.10/dist-packages (from lightfm) (1.22.4)
-    Requirement already satisfied: scipy>=0.17.0 in /usr/local/lib/python3.10/dist-packages (from lightfm) (1.10.1)
-    Requirement already satisfied: requests in /usr/local/lib/python3.10/dist-packages (from lightfm) (2.27.1)
-    Requirement already satisfied: scikit-learn in /usr/local/lib/python3.10/dist-packages (from lightfm) (1.2.2)
-    Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.10/dist-packages (from requests->lightfm) (1.26.16)
-    Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.10/dist-packages (from requests->lightfm) (2023.5.7)
-    Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.10/dist-packages (from requests->lightfm) (2.0.12)
-    Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.10/dist-packages (from requests->lightfm) (3.4)
-    Requirement already satisfied: joblib>=1.1.1 in /usr/local/lib/python3.10/dist-packages (from scikit-learn->lightfm) (1.3.1)
-    Requirement already satisfied: threadpoolctl>=2.0.0 in /usr/local/lib/python3.10/dist-packages (from scikit-learn->lightfm) (3.1.0)
-    Building wheels for collected packages: lightfm
-      Building wheel for lightfm (setup.py) ... [?25l[?25hdone
-      Created wheel for lightfm: filename=lightfm-1.17-cp310-cp310-linux_x86_64.whl size=808297 sha256=022bb7c28badeaea2b945f18452359bfff36fc21b6e3a3381c95adfff708788a
-      Stored in directory: /root/.cache/pip/wheels/4f/9b/7e/0b256f2168511d8fa4dae4fae0200fdbd729eb424a912ad636
-    Successfully built lightfm
-    Installing collected packages: lightfm
-    Successfully installed lightfm-1.17
-
-
+As usual let's import all that we need:
 
 ```python
 import numpy as np
@@ -131,11 +106,6 @@ f"Total Memory Usage: {df.memory_usage(deep=True).sum() / 1024**2:.2f} MB"
 
     Nb of transactions before filtering: 31788324
     Nb of transactions after filtering:  5274015
-
-
-
-
-
     'Total Memory Usage: 1870.28 MB'
 
 
@@ -190,11 +160,6 @@ f"Total Memory Usage: {df.memory_usage(deep=True).sum() / 1024**2:.2f} MB"
 
     Nb of customers before filtering: 559625 and nb_transactions 5274015
     Nb of customers after filtering: 99603 and nb_transactions 2127829
-
-
-
-
-
     'Total Memory Usage: 754.88 MB'
 
 
@@ -206,7 +171,7 @@ For the sake of simplicity (and because training recommendation models on huge a
 sns.countplot(y=df["index_group_name"])
 ```
 
-![png](/images/2024-02-05-hm_personalized_fashion_model/output_12_1.png)
+![png](/images/2024-02-06-hm_personalized_fashion_model/output_12_1.png)
 
 
 ```python
@@ -218,7 +183,7 @@ px.bar(
 ).show()
 ```
 
-![png](/images/2024-02-05-hm_personalized_fashion_model/02.png)
+![png](/images/2024-02-06-hm_personalized_fashion_model/02.png)
 
 
 For now, we're not going to use the items features. Usually, the customers informations are more used for marketing purpose rather than features for the recommendation model. At the end, the dataset is only composed of `customer_id` & `article_id`, with many duplicated rows when items are purchased multiple times:

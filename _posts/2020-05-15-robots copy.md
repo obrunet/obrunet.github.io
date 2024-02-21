@@ -5,7 +5,7 @@ categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]
 header:
-  image: "/images/banners/banner_neuro.png"
+  image: "/images/banners/banner_neuro.WebP"
 excerpt: "What shall we do once machines become conscious? Do we need to grant them rights?"
 mathjax: "true"
 ---

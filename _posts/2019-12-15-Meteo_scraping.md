@@ -5,7 +5,7 @@ categories:
   - Pythonic ideas
 tags: [Web scraping]
 header:
-  image: "/images/banners/banner_code.png"
+  image: "/images/banners/banner_code.WebP"
 excerpt: "How to mimick human behavior with a fake user agent header, a random timer in order not to be flagged as a bot"
 mathjax: "true"
 ---

@@ -5,7 +5,7 @@ categories:
   - Data Analysis
 tags: [Web scraping]
 header:
-  image: "/images/banners/banner_code.png"
+  image: "/images/banners/banner_code.WebP"
 excerpt: "Making Scraped Data Usable"
 mathjax: "true"
 ---

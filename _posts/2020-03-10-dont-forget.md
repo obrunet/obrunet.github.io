@@ -5,7 +5,7 @@ categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]
 header:
-  image: "/images/banners/banner_neuro.png"
+  image: "/images/banners/banner_neuro.WebP"
 excerpt: "Learning a memorization technique used by elite memory athletes leads to widespread changes in brain wiring"
 mathjax: "true"
 ---

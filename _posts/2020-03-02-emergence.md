@@ -5,7 +5,7 @@ categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]
 header:
-  image: "/images/banners/banner_neuro.png"
+  image: "/images/banners/banner_neuro.WebP"
 excerpt: "How can many stupid things combine to form smart things? How can proteins become living cells? How become lots of ants a colony? What is emergence?"
 mathjax: "true"
 ---

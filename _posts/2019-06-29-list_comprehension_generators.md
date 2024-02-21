@@ -5,7 +5,7 @@ categories:
   - Pythonic ideas
 tags: [Coding]
 header:
-  image: "/images/banners/banner_code.png"
+  image: "/images/banners/banner_code.WebP"
 excerpt: "How to use list comprehensions and generators with Python"
 mathjax: "true"
 ---

@@ -5,7 +5,7 @@ categories:
   - Pythonic ideas
 tags: [Coding]
 header:
-  image: "/images/banners/banner_code.png"
+  image: "/images/banners/banner_code.WebP"
 excerpt: "Few examples in order to illustrate how to code in a Pythonic way"
 mathjax: "true"
 ---

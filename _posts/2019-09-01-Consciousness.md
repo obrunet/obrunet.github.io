@@ -5,7 +5,7 @@ categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]
 header:
-  image: "/images/banners/banner_neuro.png"
+  image: "/images/banners/banner_neuro.WebP"
 excerpt: "How Unaware Things Became Aware"
 mathjax: "true"
 ---

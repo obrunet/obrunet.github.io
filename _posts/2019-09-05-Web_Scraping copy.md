@@ -5,7 +5,7 @@ categories:
   - Pythonic ideas
 tags: [Web scraping]
 header:
-  image: "/images/banners/banner_code.png"
+  image: "/images/banners/banner_code.WebP"
 excerpt: "The most commonly used code snippets and patterns for easy reference"
 mathjax: "true"
 ---

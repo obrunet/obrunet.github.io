@@ -5,7 +5,7 @@ categories:
   - Misc
 tags: [Misc]
 header:
-  image: "/images/banners/banner_welcome.jpeg"
+  image: "/images/banners/banner_welcome.WebP"
 excerpt: "A curated list of blogs / websites - will be updated on a regular basis"
 mathjax: "true"
 ---

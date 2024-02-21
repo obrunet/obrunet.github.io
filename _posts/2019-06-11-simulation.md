@@ -5,7 +5,7 @@ categories:
   - Neuroscience / Memory
 tags: [Neuroscience / Memory]
 header:
-  image: "/images/banners/banner_neuro.png"
+  image: "/images/banners/banner_neuro.WebP"
 excerpt: "How to be sure that we aren't living in a simulation?"
 mathjax: "true"
 ---

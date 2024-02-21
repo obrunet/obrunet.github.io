@@ -5,15 +5,12 @@ categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
-  image: "/images/2019-07-17-Customer-churn/banner.WebP"
+  image: "/images/2019-07-17-Customer-churn/louis-hansel-u13IpYtZ9I8-unsplash.WebP"
 excerpt: "Predict behavior to retain customers before the leave..."
 mathjax: "true"
 ---
 
-
-![jpg](/images/2019-07-17-Customer-churn/louis-hansel-u13IpYtZ9I8-unsplash.WebP)
-
-Photo by [Louis Hansel](https://unsplash.com/@louishansel)
+Banner made from a photo by [Louis Hansel](https://unsplash.com/@louishansel)
 
 ## Context
 Predict behavior to retain customers. You can analyze all relevant customer data and develop focused customer retention programs.

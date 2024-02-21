@@ -5,7 +5,7 @@ categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
-  image: "/images/2019-07-13-House_prices/housesbanner.png"
+  image: "/images/2019-07-13-House_prices/housesbanner.WebP"
 excerpt: "An other data science project intended to feature engineering practice, RFs, and gradient boosting"
 mathjax: "true"
 ---

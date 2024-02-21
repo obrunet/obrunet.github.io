@@ -5,7 +5,7 @@ categories:
   - Linux / Open source
 tags: [Linux]
 header:
-  image: "/images/2019-06-27-writing_efficient_loops_in_python/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.png"
+  image: "/images/2019-06-27-writing_efficient_loops_in_python/sai-kiran-anagani-5Ntkpxqt54Y-unsplash.WebP"
 excerpt: "The Linux Command Line (CLI) seems to be unfriendly? Don't worry, it's actually not that complicated, and so powerfull..."
 mathjax: "true"
 ---

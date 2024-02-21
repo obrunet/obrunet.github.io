@@ -5,7 +5,7 @@ categories:
   - Data Science
 tags: [Kaggle Competitions]
 header:
-  image: "/images/2019-07-05-Fraud-Detection/ryan-born-x8i6FfaZAbs-unsplash.jpg"
+  image: "/images/2019-07-05-Fraud-Detection/ryan-born-x8i6FfaZAbs-unsplash.WebP"
 excerpt: "Data Science can help to identify fraudulent credit card transactions based on logs"
 mathjax: "true"
 ---

@@ -171,7 +171,7 @@ For the sake of simplicity (and because training recommendation models on huge a
 sns.countplot(y=df["index_group_name"])
 ```
 
-![png](/images/2024-02-06-hm_personalized_fashion_model/output_12_1.png)
+![png](/images/2024-02-06-hm_personalized_fashion_model/01.png)
 
 
 ```python

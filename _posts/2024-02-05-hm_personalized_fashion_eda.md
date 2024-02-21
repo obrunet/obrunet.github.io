@@ -5,7 +5,7 @@ categories:
   - Recommendation System
 tags: [Recommendation System]
 header:
-  image: "/images/2024-02-05-hm_personalized_fashion_eda/pexels-tembela-bohle-1884581.jpg"
+  image: "/images/2024-02-05-hm_personalized_fashion_eda/pexels-tembela-bohle-1884581.WebP"
 excerpt: "Exploratory analysis of articles, customers, and transactions datasets with recommendation engine specific caracteristics, such as a long tail."
 mathjax: "true"
 ---
@@ -66,9 +66,6 @@ df_customers = pd.read_csv(dir_path + file_customers)
 df_articles = pd.read_csv(dir_path + file_articles)
 df_transactions = pd.read_csv(dir_path + file_transactions)
 ```
-
-    Drive already mounted at /content/drive; to attempt to forcibly remount, call drive.mount("/content/drive", force_remount=True).
-
 
 Usually informations on the customers are more used for marketings (clustering / segmentation & KYC) purpose rather than for building the recommendation system. In order to get a big picture, we can start by a description of each datasets' features (type, number & percentage of missing values, number & percentage of unique values and so on):
 
@@ -1164,13 +1161,6 @@ sns.histplot(data=df_customers, x='age', bins=50)
 ```
 
 
-
-
-    <Axes: xlabel='age', ylabel='Count'>
-
-
-
-
     
 ![png](/images/2024-02-05-hm_personalized_fashion_eda/output_16_1.png)
     
@@ -1277,18 +1267,9 @@ Most item catalogs exhibit the long tail effect (popularity bias): very few item
 df_transactions['article_id'].value_counts().reset_index().drop(columns=["index"]).plot(figsize=(6, 4))
 ```
 
-
-
-
-    <Axes: >
-
-
-
-
     
 ![png](/images/2024-02-05-hm_personalized_fashion_eda/output_31_1.png)
     
-
 
 Curiously, the same is also true for customers. This can be explained by the fact that few customers are in fact societies or resellers that buy high volumnes of items, where as the vast majority of the customers have only bought 1 or 2 items:
 
@@ -1297,19 +1278,9 @@ Curiously, the same is also true for customers. This can be explained by the fac
 df_transactions['customer_id'].value_counts()\
   .reset_index().sort_index().plot(figsize=(6, 4))
 ```
-
-
-
-
-    <Axes: >
-
-
-
-
     
 ![png](/images/2024-02-05-hm_personalized_fashion_eda/output_33_1.png)
     
-
 
 The history of transactions spans three years:
 

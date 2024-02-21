@@ -5,7 +5,7 @@ categories:
   - Data Analysis
 tags: [Data Analysis]
 header:
-  image: "/images/2019-06-12-carbon_dioxide/banner.jpg"
+  image: "/images/2019-06-12-carbon_dioxide/banner.WebP"
 excerpt: "Data analysis for each country per capita"
 mathjax: "true"
 ---

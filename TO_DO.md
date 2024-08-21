@@ -1,3 +1,15 @@
+## Important 
+- build problem: The github-pages gem can't satisfy your Gemfile's dependencies. If you want to use a different Jekyll version or need additional dependencies, consider building Jekyll site with GitHub Actions: https://jekyllrb.com/docs/continuous-integration/github-actions/
+- change post layout with teaser images
+- create book gallery in about page
+
+site examples:
+- https://yaeba.github.io/
+- https://github.com/fjp/fjp.github.io/tree/master
+
+interesting: https://happy-jihye.github.io/
+
+
 ## Next blog posts
 
 - LLMs
@@ -7,6 +19,7 @@
 - Best linux apps
 - Update the about section
 - CTFs
+
 
 ## To do asap
 - TED talk about memory with a summary

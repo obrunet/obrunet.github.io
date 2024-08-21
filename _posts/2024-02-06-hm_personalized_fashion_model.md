@@ -8,6 +8,8 @@ header:
   image: "/images/2024-02-05-hm_personalized_fashion_eda/pexels-tembela-bohle-1884581.WebP"
 excerpt: "Finetuning of an hybrid model with lightfm & evaluation of its performances."
 mathjax: "true"
+toc: true
+classes: wide
 ---
 
 Banner made from a photo by [Tembela Bohle on pexels](https://www.pexels.com/fr-fr/photo/photographie-en-niveaux-de-gris-de-vetements-assortis-sur-etagere-1884581/)
@@ -88,7 +90,7 @@ For recommendation models, we have to deal with sparse datasets. Here we're goin
 
 ```python
 assert df_articles.article_id.nunique() == df_articles.shape[0]
-
+Hands-On Machine Learning with Scikit-Learn and TensorFlow
 
 print(f"Nb of transactions before filtering: {df_transactions.shape[0]}")
 df_transactions.t_dat = pd.to_datetime(df_transactions.t_dat, infer_datetime_format=True)

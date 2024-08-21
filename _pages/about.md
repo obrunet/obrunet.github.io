@@ -5,27 +5,22 @@ header:
   image: "/images/banners/banner_about.jpg"
 ---
 
-A long time ago in a galaxy far, far away....I used to be a Civil Engineer and Project Manager. Now, as a Data Scientist, i'm fascinated by Deep Learning and how to extract knowledge and insights from structured and unstructured data. I've also a good knowledge on the Hadoop and Spark framewords / ecosystems.
+As a Data Scientist, i'm fascinated by Deep Learning / Generative AI and how to extract knowledge and insights from structured and unstructured data. I've also a good knowledge in various cloud architectures and in MLOps.
 
-Also interested in Linux and Open Sources projects during my spare time :)
+Also interested in linux, open sources projects & cyber security - CTFer during my spare time :)
 
-## Resume
-[Link](https://github.com/obrunet/Degrees_qualifications_and_resume/blob/master/Resume.pdf)
 
 ## Hobbies & interests
-* Sports : muay thai, swimming, ski...
-* Movies : science-fiction, thriller...
-* Books : neuroscience, AI, Tony Buzan's books on memory, Sophie's World, all kinds of books and newspapers 
-* Misc : linux and open source projects
+* Sports : muay thai, swimming, snowboard
+* Movies : science-fiction, thriller
+* Books : neuroscience, AI, Tony Buzan's books on memory, all kinds of books and newspapers 
+* Misc : linux and open source projects | cyerber security & capture the flag
 
+## Favorite books
 
-## Books 
-
-* [Data Science par la pratique: Fondamentaux avec Python](https://www.amazon.fr/Data-Science-par-pratique-Fondamentaux/dp/2212118686)
 * [Hands-On Machine Learning with Scikit-Learn and TensorFlow](https://www.amazon.fr/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1491962291)
 * [TensorFlow for Deep Learning](http://shop.oreilly.com/product/0636920065869.do)
 * [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
-* [Maîtrisez l'utilisation des technologies Hadoop](https://www.eyrolles.com/Informatique/Livre/maitrisez-l-utilisation-des-technologies-hadoop-9782212674781/)
 * [Big data et machine learning](https://www.eyrolles.com/Informatique/Livre/big-data-et-machine-learning-9782100790371/)
 
 

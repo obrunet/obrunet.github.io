@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Peregrination in a world of data
-email: o.brunet[{No_spam}]outlook.com
+email: o.brunet[{No_spam}]outlook[dot]com
 description: >- # this means to ignore newlines until "baseurl:"
-  Peregrination in a world of data - Pythonic code, Data Engineering, Deep Learning & Neuroscience.
+  Machine Learning | LLM | xAi | Cybersecurity & CTF
 twitter_username: obrunet
 github_username: obrunet
 minimal_mistakes_skin: default
@@ -33,7 +33,7 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
-
+@
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -1,9 +1,19 @@
 ---
-title: "About me"
+layout: single
 permalink: /about/
+title: "About me"
+author_profile: true
 header:
-  image: "/images/banners/banner_about.jpg"
+    image: "/images/banners/banner_about.jpg"
+    # overlay_image: /assets/images/joel-filipe-small-warmer.jpg
+    caption: "Photo by [Joel Filipe](https://unsplash.com/@joelfilip) on [Unsplash](https://unsplash.com)"
+classes: wide
+date: February 21, 2022
 ---
+
+<figure style="width: 30%" class="align-right">
+  <img src="/assets/images/hawaii.jpg" alt="">
+</figure>
 
 As a Data Scientist, i'm fascinated by Deep Learning / Generative AI and how to extract knowledge and insights from structured and unstructured data. I've also a good knowledge in various cloud architectures and in MLOps.
 

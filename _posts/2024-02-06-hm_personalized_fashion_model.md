@@ -9,6 +9,8 @@ header:
 excerpt: "Finetuning of an hybrid model with lightfm & evaluation of its performances."
 mathjax: "true"
 toc: true
+toc_label: "Content"
+toc_icon: "heart" 
 classes: wide
 ---
 

@@ -1,4 +1,3 @@
-
 # My personnal web site hosted on github pages
 Welcome to [my web site](https://obrunet.github.io/), enjoy your stay.
 
